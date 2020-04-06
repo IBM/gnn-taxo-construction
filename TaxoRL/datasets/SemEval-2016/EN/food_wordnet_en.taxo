@@ -1,0 +1,1576 @@
+0	chicken cordon bleu	dish
+1	croquette	dish
+2	cake mix	ready mix
+3	grapefruit peel	candied citrus peel
+4	tomato paste	ingredient
+5	lime juice	juice
+6	suds	beer
+7	compote	dessert
+8	puff paste	pastry
+9	high tea	dinner
+10	brunswick stew	stew
+11	pudding	dish
+12	decaffeinated coffee	coffee
+13	crudites	appetizer
+14	sloppy joe	sandwich
+15	chowchow	conserve
+16	lobster stew	stew
+17	gluten bread	bread
+18	pinot noir	red wine
+19	curacao	orange liqueur
+20	virgin mary	bloody mary
+21	entree	course
+22	pasta	dish
+23	junket	dessert
+24	succotash	dish
+25	egg foo yong	omelet
+26	tutti frutti	ice cream
+27	comfort food	food
+28	clotted cream	cream
+29	thyme	herb
+30	yorkshire pudding	quick bread
+31	cannelloni	pasta
+32	tiramisu	dessert
+33	demerara	rum
+34	nougat	candy
+35	bay leaf	herb
+36	chow mein	dish
+37	planter's punch	cocktail
+38	clover leaf roll	bun
+39	mineral water	drinking water
+40	brunch	meal
+41	sour salt	flavorer
+42	phosphate	soft drink
+43	margarine	spread
+44	old fashioned	cocktail
+45	gruyere	swiss cheese
+46	fruit salad	salad
+47	lithia water	mineral water
+48	mold	dessert
+49	drip coffee	coffee
+50	vitamin k	fat soluble vitamin
+51	ice water	drinking water
+52	white russian	cocktail
+53	powdered sugar	granulated sugar
+54	cottage pie	dish
+55	cheese sauce	white sauce
+56	inositol	b complex vitamin
+57	french loaf	loaf of bread
+58	chyme	food
+59	chili vinegar	vinegar
+60	brittle	candy
+61	potato	starches
+62	chicken kiev	dish
+63	spaghetti and meatballs	dish
+64	chocolate pudding	pudding
+65	raisin bread	bread
+66	high vitamin diet	diet
+67	feed	food
+68	ghee	clarified butter
+69	pepsi	cola
+70	veal scallopini	scallopine
+71	benedictine	liqueur
+72	corn syrup	syrup
+73	slug	alcohol
+74	gin and it	cocktail
+75	flummery	pudding
+76	fish house punch	punch
+77	candy corn	candy
+78	liquor	broth
+79	cracker	bread
+80	slumgullion	stew
+81	refresher	beverage
+82	cheese fondue	fondue
+83	micronutrient	food
+84	stock cube	broth
+85	highball	mixed drink
+86	hotchpotch	stew
+87	corn cake	cornbread
+88	pea flour	meal
+89	chicken tetrazzini	tetrazzini
+90	sweet corn	corn
+91	brandy	liquor
+92	cassiri	brew
+93	salad	dish
+94	skilly	gruel
+95	canary seed	bird feed
+96	bread	starches
+97	poi	dish
+98	bean tostada	tostada
+99	pineapple juice	fruit juice
+100	hyssop	herb
+101	varietal	wine
+102	kaiser roll	bun
+103	caper	pickle
+104	pepper pot	soup
+105	turtle soup	soup
+106	jambalaya	dish
+107	soft roll	bun
+108	gyro	sandwich
+109	ingesta	nutriment
+110	nipa	alcohol
+111	mash	feed
+112	roulade	dish
+113	ice cream sundae	frozen dessert
+114	ice tea	tea
+115	business lunch	lunch
+116	diet	fare
+117	molasses	syrup
+118	multivitamin	vitamin pill
+119	anchovy paste	flavorer
+120	blueberry yogurt	yogurt
+121	curry	dish
+122	self rising flour	mix
+123	turkish delight	candy
+124	chili powder	flavorer
+125	cornmeal	meal
+126	italian bread	white bread
+127	lobscouse	stew
+128	strawberry daiquiri	daiquiri
+129	fish fry	cookout
+130	egg yolk	ingredient
+131	maple syrup	syrup
+132	burgoo	stew
+133	water ice	ice
+134	popcorn	corn
+135	vitamin a1	vitamin a
+136	cinnamon toast	toast
+137	swiss steak	dish
+138	choice morsel	dainty
+139	armagnac	brandy
+140	plum sauce	sauce
+141	elixir	potion
+142	baking powder biscuit	biscuit
+143	tamale pie	dish
+144	raw milk	milk
+145	antipasto	appetizer
+146	grenadine	syrup
+147	stick cinnamon	cinnamon
+148	cabernet	red wine
+149	sour milk	milk
+150	gruel	porridge
+151	vitamin e	fat soluble vitamin
+152	costmary	herb
+153	vitamin pill	dietary supplement
+154	cows' milk	milk
+155	ginger ale	soft drink
+156	applejack	brandy
+157	orangeade	fruit drink
+158	punch	mixed drink
+159	bacon and eggs	dish
+160	roquefort	bleu
+161	burgundy	wine
+162	rhone wine	wine
+163	anisette	liqueur
+164	vichyssoise	soup
+165	table wine	wine
+166	soubise	sauce
+167	green pea soup	soup
+168	fat soluble vitamin	vitamin
+169	chocolate milk	milk
+170	pasta salad	salad
+171	spaghetti sauce	sauce
+172	fruit cocktail	cocktail
+173	sushi	dish
+174	fried rice	dish
+175	dinner	meal
+176	cola	soft drink
+177	oyster cracker	cracker
+178	skillet corn bread	cornbread
+179	hasty pudding	porridge
+180	syllabub	dessert
+181	french fries	potato
+182	evaporated milk	milk
+183	parmesan	cheese
+184	horseradish	condiment
+185	grissino	breadstick
+186	mulligatawny	soup
+187	drop biscuit	biscuit
+188	honey bun	sweet roll
+189	oyster stuffing	stuffing
+190	canape	appetizer
+191	homogenized milk	milk
+192	enchilada	dish
+193	borage	herb
+194	anchovy pizza	pizza
+195	filling	concoction
+196	buttermilk biscuit	biscuit
+197	barbecue	dish
+198	cranberry juice	fruit juice
+199	spam	canned meat
+200	rice	starches
+201	sausage pizza	pizza
+202	brown rice	rice
+203	buffet	meal
+204	concoction	foodstuff
+205	chicken feed	mash
+206	cattle cake	feed
+207	roux	concoction
+208	macon	wine
+209	herb tea	tea
+210	biscuit	quick bread
+211	simnel	bread
+212	frozen food	foodstuff
+213	groats	grain
+214	liederkranz	cheese
+215	corn sugar	sugar
+216	salsa	condiment
+217	bran muffin	muffin
+218	breadstick	bread
+219	snowball	frozen dessert
+220	meat loaf	dish
+221	gefilte fish	dish
+222	apricot sauce	sauce
+223	cheese souffle	souffle
+224	patty	dish
+225	lobster thermidor	dish
+226	sloe gin	gin
+227	chablis	burgundy
+228	butty	sandwich
+229	nantua	sauce
+230	vitamin p	water soluble vitamin
+231	molasses kiss	kiss
+232	vanilla pudding	pudding
+233	fudge	candy
+234	wrap	sandwich
+235	zombie	highball
+236	spotted dick	suet pudding
+237	cognac	brandy
+238	breakfast	meal
+239	home brew	alcohol
+240	garlic bread	bread
+241	seasoned salt	flavorer
+242	vitamin	nutriment
+243	nasturtium	flavorer
+244	fare	food
+245	taco sauce	condiment
+246	arroz con pollo	chicken and rice
+247	soup du jour	soup
+248	instant coffee	coffee
+249	marmite	soup
+250	rum sling	sling
+251	peppermint	mint
+252	black pepper	pepper
+253	rickey	mixed drink
+254	challah	bread
+255	vichy water	mineral water
+256	nacho	tortilla chip
+257	gluten free diet	diet
+258	candy cane	candy
+259	must	grape juice
+260	potpie	dish
+261	soybean meal	flour
+262	flan	dessert
+263	hard boiled egg	boiled egg
+264	broad bean	fodder
+265	creme de fraise	liqueur
+266	bloody mary	cocktail
+267	clarified butter	butter
+268	frozen orange juice	orange juice
+269	hard cider	cider
+270	scotch broth	soup
+271	dill	herb
+272	allspice	spice
+273	toast	bread
+274	canned food	foodstuff
+275	mushy peas	side dish
+276	beaujolais	red wine
+277	coquilles saint jacques	dish
+278	vitamin a	fat soluble vitamin
+279	barbecue	cookout
+280	sauerbraten	dish
+281	tuck	comestible
+282	emmenthal	swiss cheese
+283	cranberry sauce	condiment
+284	turkey stuffing	stuffing
+285	soft drink	beverage
+286	coq au vin	dish
+287	whip	dessert
+288	jelly bean	candy
+289	heavy cream	cream
+290	coloring	foodstuff
+291	collins	highball
+292	frankfurter bun	bun
+293	cream soda	soft drink
+294	pinwheel roll	sweet roll
+295	egg roll	dish
+296	stuffed tomato	dish
+297	swiss cheese	cheese
+298	kosher	nutriment
+299	maraschino	sweet
+300	danish blue	bleu
+301	fenugreek	flavorer
+302	potluck	meal
+303	spring water	water
+304	combination salad	tossed salad
+305	lunch	meal
+306	vitamin k1	vitamin k
+307	sorghum	syrup
+308	crouton	bread
+309	daiquiri	cocktail
+310	sauterne	white wine
+311	porcupine ball	meatball
+312	lemon peel	candied citrus peel
+313	hot sauce	sauce
+314	mess	nutriment
+315	corn dab	cornbread
+316	chenin blanc	white wine
+317	praline	candy
+318	orange pekoe	black tea
+319	honey crisp	candy
+320	dessert wine	wine
+321	semolina	flour
+322	frozen orange juice	concentrate
+323	bavarian cream	custard
+324	eggs benedict	dish
+325	rhine wine	white wine
+326	hungarian sauce	sauce
+327	mulligan stew	stew
+328	sauerkraut	dish
+329	orange toast	toast
+330	paddy	rice
+331	tetrazzini	dish
+332	firewater	liquor
+333	flatbread	bread
+334	chili dog	hotdog
+335	mocha	coffee
+336	gouda	cheese
+337	cream cheese	cheese
+338	diet	fare
+339	pickle relish	relish
+340	madeira	fortified wine
+341	muscadet	white wine
+342	moussaka	dish
+343	life saver	candy
+344	brown betty	pudding
+345	refried beans	dish
+346	condensed milk	milk
+347	chives	herb
+348	elixir of life	elixir
+349	silage	feed
+350	low fat diet	diet
+351	fondue	dish
+352	bland diet	diet
+353	ham sandwich	sandwich
+354	dehydrated food	foodstuff
+355	tea bread	bun
+356	dolmas	dish
+357	schnapps	liquor
+358	chinese mustard	mustard
+359	pinole	meal
+360	steak au poivre	dish
+361	viand	dish
+362	peppermint patty	patty
+363	refection	meal
+364	semi skimmed milk	milk
+365	bear claw	sweet roll
+366	sukiyaki	dish
+367	nonfat dry milk	powdered milk
+368	apple butter	conserve
+369	c ration	field ration
+370	brown bread	bread
+371	seltzer	mineral water
+372	pepper sauce	sauce
+373	timbale	dish
+374	cuppa	tea
+375	bread dough	dough
+376	burgoo	cookout
+377	water soluble vitamin	vitamin
+378	sweet woodruff	herb
+379	hardbake	sweet
+380	mint	candy
+381	lollipop	candy
+382	porridge	dish
+383	cinnamon	spice
+384	hamburger bun	bun
+385	clam dip	dip
+386	hot fudge sauce	chocolate sauce
+387	bleu cheese dressing	dressing
+388	bread and butter pickle	sweet pickle
+389	bourbon	whiskey
+390	high protein diet	diet
+391	fish loaf	meat loaf
+392	root beer	soft drink
+393	peach sauce	sauce
+394	sidecar	cocktail
+395	cotton candy	candy
+396	scallopine	dish
+397	lobster newburg	seafood newburg
+398	loaf of bread	bread
+399	onion roll	bun
+400	garlic salt	flavorer
+401	conserve	confiture
+402	turkish coffee	coffee
+403	concentrate	foodstuff
+404	cinnamon bread	bread
+405	ambrosia	dessert
+406	appetizer	course
+407	flip	mixed drink
+408	amontillado	sherry
+409	limpa	rye bread
+410	finger food	nutriment
+411	foie gras	pate
+412	lacing	liquor
+413	cider	beverage
+414	sugar	sweetening
+415	pepperoni pizza	pizza
+416	milk	nutriment
+417	pirogi	turnover
+418	koumiss	alcohol
+419	formula	milk
+420	barbecue sauce	sauce
+421	pasteurized milk	milk
+422	tossed salad	salad
+423	lovage	herb
+424	quark cheese	cheese
+425	gazpacho	soup
+426	powdered milk	milk
+427	tipsy cake	trifle
+428	coffee	beverage
+429	biryani	dish
+430	timothy	hay
+431	charlotte russe	charlotte
+432	saccharin	sweetening
+433	spice	flavorer
+434	coffee substitute	coffee
+435	double cream	cream cheese
+436	marsala	fortified wine
+437	chowder	soup
+438	raw milk	milk
+439	stuffed cabbage	dish
+440	seafood newburg	dish
+441	gin and tonic	highball
+442	chewing gum	sweet
+443	petite marmite	soup
+444	baked alaska	dessert
+445	cafe noir	coffee
+446	lutefisk	dish
+447	hors d'oeuvre	appetizer
+448	canary wine	white wine
+449	beef burrito	burrito
+450	clambake	cookout
+451	ginger	spice
+452	chicken cacciatore	chicken casserole
+453	clary sage	sage
+454	bouillabaisse	fish stew
+455	millet	grain
+456	muenster	cheese
+457	strawberry jam	jam
+458	ploughman's lunch	meal
+459	frittata	dish
+460	claret	red wine
+461	vegetarianism	diet
+462	dip	condiment
+463	divinity	fudge
+464	meal	foodstuff
+465	cheese	dairy product
+466	omelet	dish
+467	patty	candy
+468	caraway seed bread	bread
+469	half and half	dairy product
+470	castor sugar	powdered sugar
+471	tamale	dish
+472	camomile tea	tisane
+473	juniper berries	flavorer
+474	grain	foodstuff
+475	soup	dish
+476	tea	meal
+477	savory	herb
+478	parsley	herb
+479	turmeric	flavorer
+480	grog	rum
+481	irish coffee	coffee
+482	creep feed	feed
+483	poppy seed	flavorer
+484	coconut milk	milk
+485	soy sauce	condiment
+486	scotch and soda	highball
+487	garlic	flavorer
+488	quick bread	bread
+489	chip	snack food
+490	medoc	red wine
+491	nut bar	candy
+492	wheat germ	nutriment
+493	jelly	conserve
+494	peach ice cream	ice cream
+495	last supper	seder
+496	pepper steak	dish
+497	peanut bar	candy
+498	scotch	whiskey
+499	alpha tocopheral	vitamin e
+500	aqua vitae	liquor
+501	hard candy	candy
+502	spanish rice	dish
+503	triple sec	orange liqueur
+504	black bread	rye bread
+505	galantine	dish
+506	bottled water	drinking water
+507	hay	fodder
+508	hard cider	alcohol
+509	nada daiquiri	daiquiri
+510	frozen dessert	dessert
+511	colostrum	milk
+512	salt rising bread	bread
+513	grist	grain
+514	truffle	candy
+515	tunaburger	sandwich
+516	cold duck	sparkling wine
+517	bulgur	wheat
+518	frozen yogurt	yogurt
+519	smitane	sauce
+520	bisque	soup
+521	blanc	white sauce
+522	barbecued wing	dish
+523	coca cola	cola
+524	herb	flavorer
+525	calvados	brandy
+526	black olive	olive
+527	egg cream	soft drink
+528	mock turtle soup	soup
+529	grated cheese	cheese
+530	won ton	soup
+531	western	sandwich
+532	remoulade sauce	sauce
+533	sugar candy	candy
+534	supper	meal
+535	celery seed	flavorer
+536	drop scone	scone
+537	nosh	bite
+538	brown butter	butter
+539	b complex vitamin	water soluble vitamin
+540	vin ordinaire	table wine
+541	sauvignon blanc	white wine
+542	white rice	rice
+543	liebfraumilch	rhine wine
+544	certified milk	milk
+545	consomme	soup
+546	olive	relish
+547	grand marnier	orange liqueur
+548	espagnole	sauce
+549	bleu	cheese
+550	onion butter	spread
+551	corn pudding	pudding
+552	clove	garlic
+553	salisbury steak	dish
+554	barmbrack	bread
+555	pita	flatbread
+556	saute	dish
+557	ration	fare
+558	turkey stew	fricassee
+559	cough drop	lozenge
+560	host	bread
+561	penuche	fudge
+562	mustard sauce	sauce
+563	irish soda bread	quick bread
+564	sashimi	dish
+565	bitter lemon	soft drink
+566	anchovy sauce	sauce
+567	reducing diet	diet
+568	martini	cocktail
+569	hot toddy	mixed drink
+570	ice milk	frozen dessert
+571	hard roll	bun
+572	green mayonnaise	mayonnaise
+573	generic	wine
+574	cream	dairy product
+575	dragee	candy
+576	steak tartare	dish
+577	claret	bordeaux
+578	lump sugar	sugar
+579	couscous	dish
+580	lemon oil	flavorer
+581	duck pate	pate
+582	macaroni salad	pasta salad
+583	ratafia	liqueur
+584	fish and chips	dish
+585	whole milk	milk
+586	weissbier	ale
+587	cocoa	foodstuff
+588	ambrosia	dainty
+589	bearnaise	sauce
+590	tea like drink	beverage
+591	absinth	liqueur
+592	course	nutriment
+593	field ration	ration
+594	newburg sauce	sauce
+595	sling	highball
+596	loblolly	gruel
+597	green salad	tossed salad
+598	piece de resistance	dish
+599	negus	mulled wine
+600	blended whiskey	whiskey
+601	carob bar	candy
+602	scotch kiss	kiss
+603	bishop	mulled wine
+604	sugarplum	candy
+605	riesling	rhine wine
+606	sour mash	whiskey
+607	mix	concoction
+608	veal cordon bleu	dish
+609	lithia water	mineral water
+610	pulque	alcohol
+611	french dressing	dressing
+612	raita	side dish
+613	stinger	cocktail
+614	corn chip	snack food
+615	salt	flavorer
+616	mashed potato	potato
+617	basil	herb
+618	straw wine	dessert wine
+619	sweet	dainty
+620	mushroom sauce	sauce
+621	blancmange	dessert
+622	pottage	stew
+623	peach melba	dessert
+624	clabber	dairy product
+625	club sandwich	sandwich
+626	fennel seed	flavorer
+627	nosh up	meal
+628	continental breakfast	breakfast
+629	milk	beverage
+630	margarita	cocktail
+631	popover	muffin
+632	vitamin c	water soluble vitamin
+633	iced coffee	coffee
+634	hoecake	johnnycake
+635	whipping cream	cream
+636	hash	dish
+637	wasabi	condiment
+638	vitamin a2	vitamin a
+639	wheat	grain
+640	candy bar	candy
+641	lekvar	filling
+642	hummus	spread
+643	white wine	wine
+644	orange peel	candied citrus peel
+645	powdered mustard	mustard
+646	cocktail	mixed drink
+647	turnover	dish
+648	dessert	course
+649	cornbread	quick bread
+650	clear liquid diet	liquid diet
+651	matzo meal	meal
+652	chop suey	dish
+653	low fat milk	milk
+654	hotdog	sandwich
+655	chicken stew	fricassee
+656	cat food	petfood
+657	nut butter	spread
+658	kirsch	brandy
+659	dill seed	flavorer
+660	lemon juice	juice
+661	snail butter	sauce
+662	butter	dairy product
+663	scotch egg	dish
+664	scalded milk	milk
+665	center	sweet
+666	vitamin bc	b complex vitamin
+667	commissariat	food
+668	tarragon	herb
+669	mascarpone	cream cheese
+670	mimosa	mixed drink
+671	crab cocktail	cocktail
+672	banquet	meal
+673	chicken broth	broth
+674	graham bread	dark bread
+675	oat	grain
+676	strawberry ice cream	ice cream
+677	potage	soup
+678	scrambled eggs	dish
+679	poached egg	dish
+680	whole milk	milk
+681	monosodium glutamate	flavorer
+682	sweet cicely	herb
+683	sandwich plate	dish
+684	meuniere butter	butter
+685	amaretto	liqueur
+686	pimento butter	spread
+687	tea	beverage
+688	peanut brittle	brittle
+689	mozzarella	cheese
+690	macrobiotic diet	vegetarianism
+691	rue	herb
+692	vitamin b12	b complex vitamin
+693	neapolitan ice cream	ice cream
+694	bialy	onion roll
+695	bran	roughage
+696	fishpaste	spread
+697	sesame seed	flavorer
+698	caramel	candy
+699	cornpone	cornbread
+700	grapefruit juice	fruit juice
+701	choline	b complex vitamin
+702	mustard seed	flavorer
+703	chicken marengo	dish
+704	stodge	nutriment
+705	yak's milk	milk
+706	allergy diet	diet
+707	catsup	condiment
+708	oatcake	quick bread
+709	starches	foodstuff
+710	mayonnaise	dressing
+711	corn chowder	chowder
+712	candy	sweet
+713	saffron	flavorer
+714	malmsey	madeira
+715	bread sauce	sauce
+716	marzipan	candy
+717	cambric tea	tea
+718	phyllo	puff paste
+719	smoothie	beverage
+720	macaroni and cheese	pasta
+721	swedish rye bread	rye bread
+722	ice water	drinking water
+723	roly poly	pudding
+724	seder	supper
+725	reuben	sandwich
+726	western omelet	firm omelet
+727	mixed drink	alcohol
+728	brandy sling	sling
+729	tabasco	hot sauce
+730	hyson	green tea
+731	casserole	dish
+732	curry sauce	sauce
+733	jam	conserve
+734	hard sauce	sauce
+735	carrot juice	juice
+736	alphabet soup	soup
+737	wish wash	beverage
+738	terrine	dish
+739	blood meal	feed
+740	mother's milk	milk
+741	spoon bread	cornbread
+742	crab louis	salad
+743	goats' milk	milk
+744	tomato concentrate	concentrate
+745	vinegar	condiment
+746	chowchow	relish
+747	macedoine	dish
+748	trifle	pudding
+749	cream sauce	white sauce
+750	fruit drink	beverage
+751	champagne	sparkling wine
+752	comfit	sweet
+753	wort	malt
+754	pizza	dish
+755	fruit juice	beverage
+756	spread	condiment
+757	veloute	sauce
+758	bonbon	candy
+759	jawbreaker	hard candy
+760	gherkin	pickle
+761	lyonnaise sauce	sauce
+762	seltzer	mineral water
+763	miraculous food	food
+764	chinese anise	spice
+765	dietary supplement	diet
+766	beef stroganoff	dish
+767	oatmeal	porridge
+768	orange juice	fruit juice
+769	irish	whiskey
+770	cracked wheat bread	bread
+771	side dish	dish
+772	double creme	cream
+773	juice	foodstuff
+774	eatage	fodder
+775	mineral water	drinking water
+776	green olive	olive
+777	lorenzo dressing	dressing
+778	dietary	fare
+779	brick cheese	cheese
+780	meatball	dish
+781	irish stew	stew
+782	deviled egg	dish
+783	brioche	bun
+784	condensed milk	milk
+785	madrilene	consomme
+786	lemonade mix	ready mix
+787	paprika	flavorer
+788	gelatin dessert	gelatin
+789	mousse	dessert
+790	welsh rarebit	dish
+791	oatmeal	meal
+792	limeade	fruit drink
+793	broth	soup
+794	osso buco	dish
+795	ragout	stew
+796	draft beer	beer
+797	scone	quick bread
+798	rioja	red wine
+799	italian dressing	dressing
+800	sparkling wine	wine
+801	pavlova	dessert
+802	dubonnet	wine
+803	manhattan	cocktail
+804	coffee break	bite
+805	port	fortified wine
+806	kishke	dish
+807	duck sauce	condiment
+808	light diet	diet
+809	carrot pudding	pudding
+810	skim milk	milk
+811	skillet bread	quick bread
+812	training table	board
+813	white bread	bread
+814	coleslaw	salad
+815	picnic	meal
+816	fizz	beverage
+817	cross bun	sweet roll
+818	retsina	wine
+819	licorice	candy
+820	oktoberfest	lager
+821	sugar water	drinking water
+822	chicken paprika	dish
+823	herring salad	salad
+824	date bread	quick bread
+825	kvass	brew
+826	whiskey sour	sour
+827	gorgonzola	bleu
+828	demiglace	sauce
+829	melba toast	toast
+830	sauce louis	dressing
+831	carbonnade flamande	dish
+832	chicory	coffee substitute
+833	dressing	sauce
+834	gin rickey	rickey
+835	creme brulee	custard
+836	teriyaki	dish
+837	stout	ale
+838	chervil	herb
+839	baguet	french bread
+840	shirred egg	dish
+841	pate	spread
+842	pop	soft drink
+843	matzo	bread
+844	spruce beer	brew
+845	congou	black tea
+846	lentil soup	soup
+847	pretzel	cracker
+848	sambuca	liqueur
+849	gin	liquor
+850	brown sauce	sauce
+851	salmon loaf	fish loaf
+852	chocolate milk	milk
+853	crescent roll	bun
+854	lozenge	candy
+855	fried egg	dish
+856	scampi	dish
+857	bavarian blue	bleu
+858	beef stew	stew
+859	vitamin b6	b complex vitamin
+860	kibble	meal
+861	treacle	syrup
+862	petfood	feed
+863	acidophilus milk	milk
+864	gin sling	sling
+865	pina colada	mixed drink
+866	malt	grain
+867	soda water	drinking water
+868	velveeta	cheese
+869	ratatouille	stew
+870	ouzo	liquor
+871	sour	cocktail
+872	diabetic diet	diet
+873	celery stick	crudites
+874	biotin	b complex vitamin
+875	souchong	black tea
+876	mess	meal
+877	brie	cheese
+878	caramel	sugar
+879	icing sugar	powdered sugar
+880	rye	whiskey
+881	dairy product	foodstuff
+882	hominy	corn
+883	espresso	coffee
+884	scotch woodcock	dish
+885	vintage	wine
+886	cracked wheat	wheat
+887	fish meal	feed
+888	cassareep	flavorer
+889	beer	brew
+890	white rice	rice
+891	soda water	drinking water
+892	mold	dish
+893	savory	dainty
+894	chicken soup	soup
+895	sweet cider	cider
+896	molasses taffy	taffy
+897	stuffing	concoction
+898	hollandaise	sauce
+899	clam chowder	chowder
+900	stuffed mushroom	hors d'oeuvre
+901	lamb curry	curry
+902	moonshine	corn whiskey
+903	buckwheat	grain
+904	suet pudding	pudding
+905	snowball	frozen dessert
+906	beverage	food
+907	near beer	beverage
+908	fish loaf	meat loaf
+909	oyster stew	stew
+910	buttermilk	milk
+911	fish mousse	mousse
+912	vanilla	flavorer
+913	proof spirit	alcohol
+914	fondant	candy
+915	wintergreen oil	flavorer
+916	thousand island dressing	dressing
+917	guinness	stout
+918	cookout	picnic
+919	tea	herb
+920	bulgur pilaf	pilaf
+921	spanish paprika	paprika
+922	corn muffin	muffin
+923	borsch	soup
+924	claret cup	cup
+925	uruguay potato	potato
+926	purloo	stew
+927	chili sauce	condiment
+928	relish	condiment
+929	slivovitz	brandy
+930	popcorn ball	candy
+931	taco	dish
+932	mint	herb
+933	chocolate fudge	fudge
+934	galliano	liqueur
+935	anchovy butter	spread
+936	soul food	food
+937	pasteurized milk	milk
+938	muffin	quick bread
+939	liqueur	alcohol
+940	aspartame	sweetening
+941	nonpareil	sweet
+942	pork and beans	dish
+943	scrumpy	cider
+944	wafer	bread
+945	saint emilion	claret
+946	double gloucester	cheese
+947	sun tea	tea
+948	tapioca pudding	pudding
+949	orange liqueur	liqueur
+950	sour bread	bread
+951	oxtail soup	soup
+952	cocktail	appetizer
+953	stover	fodder
+954	anchovy dressing	dressing
+955	skim milk	milk
+956	burton	ale
+957	caraway seed	flavorer
+958	drinking water	water
+959	cotes de provence	wine
+960	stick	butter
+961	oil meal	oil cake
+962	choc ice	chocolate ice cream
+963	congee	gruel
+964	curd	foodstuff
+965	pousse cafe	liqueur
+966	pork and veal goulash	goulash
+967	fluffy omelet	omelet
+968	homogenized milk	milk
+969	mulled wine	wine
+970	french bread	white bread
+971	bitters	liquor
+972	bubble and squeak	dish
+973	spritzer	mixed drink
+974	hot pot	stew
+975	chablis	white wine
+976	confectionery	sweet
+977	chef's salad	combination salad
+978	batter	concoction
+979	bock	lager
+980	bitok	dish
+981	edam	cheese
+982	angelica	flavorer
+983	sapsago	swiss cheese
+984	rolled biscuit	biscuit
+985	coquille	dish
+986	onion bread	bread
+987	apple dumpling	dumpling
+988	weizenbier	weissbier
+989	certified milk	milk
+990	frozen custard	frozen dessert
+991	vodka martini	martini
+992	oolong	tea
+993	pearl hominy	hominy
+994	mocha	flavorer
+995	rum	liquor
+996	tapioca	foodstuff
+997	charlotte	dessert
+998	samosa	turnover
+999	bathtub gin	gin
+1000	lemon curd	conserve
+1001	zabaglione	dessert
+1002	rollmops	hors d'oeuvre
+1003	birch beer	soft drink
+1004	lasagna	pasta
+1005	manhattan clam chowder	clam chowder
+1006	allemande	sauce
+1007	balanced diet	diet
+1008	feed grain	feed
+1009	sweet roll	bun
+1010	bouillon cube	flavorer
+1011	yak butter	butter
+1012	food cache	commissariat
+1013	ice lolly	frozen dessert
+1014	chicken salad	salad
+1015	vanilla ice cream	ice cream
+1016	date nut bread	quick bread
+1017	tuna fish salad	salad
+1018	ice cream cake	frozen dessert
+1019	egg white	ingredient
+1020	oil cake	feed
+1021	canned meat	canned food
+1022	dumpling	dessert
+1023	porter	ale
+1024	branch water	water
+1025	foodstuff	food
+1026	criollo	cocoa
+1027	plum pudding	pudding
+1028	salmon loaf	fish loaf
+1029	french toast	dish
+1030	chocolate egg	easter egg
+1031	pale ale	ale
+1032	drambuie	liqueur
+1033	veal parmesan	dish
+1034	perry	alcohol
+1035	gimlet	cocktail
+1036	cayenne	flavorer
+1037	pink lady	cocktail
+1038	orange soda	soft drink
+1039	johnnycake	cornbread
+1040	steak sauce	condiment
+1041	cock a leekie	soup
+1042	water	food
+1043	shrimp newburg	seafood newburg
+1044	adobo	dish
+1045	marshmallow fluff	spread
+1046	pastry	dough
+1047	curd	dairy product
+1048	russian dressing	dressing
+1049	honey	sweetening
+1050	cheese spread	spread
+1051	candied apple	sweet
+1052	bourguignon	sauce
+1053	montrachet	burgundy
+1054	buttermilk	milk
+1055	pilsner	lager
+1056	half and half dressing	dressing
+1057	almond extract	flavorer
+1058	liquor	alcohol
+1059	corn whiskey	whiskey
+1060	ale	beer
+1061	bagel	bun
+1062	vitamin d	fat soluble vitamin
+1063	granulated sugar	sugar
+1064	bolognese pasta sauce	spaghetti sauce
+1065	sugarloaf	sugar
+1066	burrito	dish
+1067	ricotta	cheese
+1068	bercy	sauce
+1069	bomber	sandwich
+1070	drambuie	scotch
+1071	frozen pudding	frozen dessert
+1072	bite	meal
+1073	nonfat dry milk	powdered milk
+1074	malt	lager
+1075	power breakfast	breakfast
+1076	sarsaparilla	soft drink
+1077	sugar water	drinking water
+1078	scrapple	dish
+1079	screwdriver	cocktail
+1080	cows' milk	milk
+1081	slop	feed
+1082	peppermint oil	flavorer
+1083	coconut milk	milk
+1084	wassail	punch
+1085	milk	dairy product
+1086	sweetmeat	sweet
+1087	crabapple jelly	apple jelly
+1088	caraway	herb
+1089	tea bag	tea
+1090	light cream	cream
+1091	ice cream	frozen dessert
+1092	spearmint oil	flavorer
+1093	banana split	split
+1094	pinot blanc	white wine
+1095	souvlaki	kabob
+1096	cud	feed
+1097	grasshopper	cocktail
+1098	papaya juice	juice
+1099	corn gluten feed	feed
+1100	fish chowder	chowder
+1101	nutriment	food
+1102	kahlua	coffee liqueur
+1103	jewish rye bread	rye bread
+1104	fruit punch	punch
+1105	chicken mousse	mousse
+1106	sake	alcohol
+1107	haggis	dish
+1108	nectar	fruit juice
+1109	blush wine	wine
+1110	chutney	condiment
+1111	confiture	sweet
+1112	lemon balm	herb
+1113	meat loaf	loaf of bread
+1114	puff batter	batter
+1115	kiss	candy
+1116	cup	punch
+1117	baked potato	potato
+1118	cachou	lozenge
+1119	chartreuse	liqueur
+1120	may wine	punch
+1121	blood agar	agar
+1122	beet sugar	sugar
+1123	grape juice	fruit juice
+1124	french omelet	firm omelet
+1125	mead	brew
+1126	new england clam chowder	clam chowder
+1127	refreshment	bite
+1128	coffee liqueur	liqueur
+1129	vanilla bean	flavorer
+1130	five spice powder	spice
+1131	potato skin	snack food
+1132	pruno	hooch
+1133	flour	foodstuff
+1134	gelatin	dainty
+1135	mulled cider	sweet cider
+1136	parfait	frozen dessert
+1137	vouvray	white wine
+1138	beaujolais	burgundy
+1139	evaporated milk	concentrate
+1140	soya milk	milk
+1141	coriander	flavorer
+1142	carob	foodstuff
+1143	light beer	lager
+1144	apple juice	fruit juice
+1145	aperitif	alcohol
+1146	pheasant under glass	dish
+1147	chicken casserole	casserole
+1148	chinese brown sauce	sauce
+1149	bottled water	drinking water
+1150	tapenade	spread
+1151	mast	feed
+1152	chocolate fondue	fondue
+1153	carbohydrate loading	diet
+1154	flatbrod	flatbread
+1155	medoc	bordeaux
+1156	graham cracker	cracker
+1157	merlot	red wine
+1158	rye bread	bread
+1159	hamburger	sandwich
+1160	fanny adams	canned meat
+1161	kava	alcohol
+1162	breadstuff	foodstuff
+1163	sandwich	snack food
+1164	malted milk	ingredient
+1165	caesar salad	tossed salad
+1166	chocolate sauce	sauce
+1167	marchand de vin	sauce
+1168	quesadilla	burrito
+1169	saint emilion	claret
+1170	acidophilus milk	milk
+1171	dog food	petfood
+1172	molded salad	salad
+1173	maryland chicken	dish
+1174	alfalfa	fodder
+1175	stuffed peppers	dish
+1176	arrack	liquor
+1177	jug wine	wine
+1178	beef bourguignonne	dish
+1179	condiment	flavorer
+1180	postum	coffee substitute
+1181	pernod	liqueur
+1182	liquid diet	diet
+1183	bannock	flatbread
+1184	sweet pickle	pickle
+1185	broth	soup
+1186	oenomel	beverage
+1187	pudding	dessert
+1188	marinade	condiment
+1189	kummel	liqueur
+1190	stuffed tomato	dish
+1191	marc	brandy
+1192	plate	entree
+1193	chicken sandwich	sandwich
+1194	sherry	fortified wine
+1195	boiled dinner	dish
+1196	darjeeling	black tea
+1197	mate	beverage
+1198	triple cream	cheese
+1199	guacamole	dip
+1200	taffy	candy
+1201	cheeseburger	hamburger
+1202	hooch	alcohol
+1203	board	fare
+1204	caper sauce	sauce
+1205	chapatti	flatbread
+1206	matelote	fish stew
+1207	tonic	soft drink
+1208	camembert	cheese
+1209	sassafras	flavorer
+1210	pepper	flavorer
+1211	salmi	ragout
+1212	worcester sauce	sauce
+1213	dry vermouth	vermouth
+1214	brandyball	candy
+1215	gumdrop	candy
+1216	peanut butter	spread
+1217	cola extract	flavorer
+1218	cardamom	flavorer
+1219	hand cheese	cheese
+1220	ashcake	cornbread
+1221	lye hominy	hominy
+1222	cheese dip	dip
+1223	fodder	feed
+1224	shawnee cake	johnnycake
+1225	pesto	sauce
+1226	marjoram	herb
+1227	demerara	brown sugar
+1228	barbecued spareribs	dish
+1229	manzanilla	sherry
+1230	neutral spirits	alcohol
+1231	celery salt	flavorer
+1232	lemon extract	flavorer
+1233	aioli	sauce
+1234	rijsttaffel	dish
+1235	shortcake	baking powder biscuit
+1236	apple turnover	turnover
+1237	limburger	cheese
+1238	chicken and rice	dish
+1239	ice cream cone	frozen dessert
+1240	eggdrop soup	soup
+1241	ravigote	sauce
+1242	ginger	flavorer
+1243	vodka	liquor
+1244	glogg	punch
+1245	sourball	hard candy
+1246	cooler	beverage
+1247	dish	nutriment
+1248	black tea	tea
+1249	niacin	b complex vitamin
+1250	prune whip	whip
+1251	calf's foot jelly	gelatin
+1252	metheglin	mead
+1253	milk	foodstuff
+1254	schnitzel	dish
+1255	cheese pizza	pizza
+1256	sugar syrup	syrup
+1257	jacket potato	baked potato
+1258	carbonara	spaghetti sauce
+1259	verdicchio	white wine
+1260	pot au feu	stew
+1261	bubble gum	chewing gum
+1262	cheddar	cheese
+1263	salad nicoise	salad
+1264	square meal	meal
+1265	vermouth	wine
+1266	stilton	bleu
+1267	kabob	dish
+1268	creme anglais	custard
+1269	cinnamon roll	sweet roll
+1270	water biscuit	cracker
+1271	angelica	herb
+1272	hush puppy	cornbread
+1273	fruit custard	custard
+1274	brown sugar	sugar
+1275	jello	gelatin dessert
+1276	scalded milk	milk
+1277	fricassee	stew
+1278	nutmeg	spice
+1279	bun	bread
+1280	beef wellington	dish
+1281	lager	beer
+1282	apple jelly	jelly
+1283	risotto	dish
+1284	chianti	red wine
+1285	fortified wine	wine
+1286	aspic	gelatin
+1287	pastis	liqueur
+1288	evaporated milk	milk
+1289	barley sugar	hard candy
+1290	fish stew	stew
+1291	olla podrida	stew
+1292	semi skimmed milk	milk
+1293	sour milk	milk
+1294	fennel	spice
+1295	low sodium diet	diet
+1296	paella	dish
+1297	larder	commissariat
+1298	pea soup	soup
+1299	knish	turnover
+1300	eggnog	punch
+1301	nesselrode	pudding
+1302	sweet vermouth	vermouth
+1303	green tea	tea
+1304	gumbo	soup
+1305	buffalo wing	dish
+1306	string cheese	cheese
+1307	duff	pudding
+1308	onion bagel	bagel
+1309	cane sugar	sugar
+1310	low fat milk	milk
+1311	paddy	rice
+1312	summer savory	savory
+1313	mustard	condiment
+1314	low calorie diet	reducing diet
+1315	powdered milk	milk
+1316	montrachet	white wine
+1317	muscat	fortified wine
+1318	alcohol	beverage
+1319	barley	grain
+1320	porkholt	goulash
+1321	rock candy	candy
+1322	garlic chive	flavorer
+1323	onion salt	flavorer
+1324	aquavit	liquor
+1325	grappa	brandy
+1326	yolk	food
+1327	yquem	white wine
+1328	menu	fare
+1329	lemon drop	hard candy
+1330	wine	alcohol
+1331	bordelaise	sauce
+1332	julienne	soup
+1333	firm omelet	omelet
+1334	tempura	dish
+1335	vitamin k3	vitamin k
+1336	special	dish
+1337	tortilla chip	corn chip
+1338	banana bread	quick bread
+1339	drinking water	beverage
+1340	bacon lettuce tomato sandwich	sandwich
+1341	wheat flour	flour
+1342	chocolate ice cream	ice cream
+1343	fad diet	reducing diet
+1344	yogurt	dairy product
+1345	horseradish sauce	sauce
+1346	souffle	dish
+1347	tequila	liquor
+1348	fritter batter	batter
+1349	bordeaux	wine
+1350	tabbouleh	salad
+1351	plonk	wine
+1352	v 8 juice	juice
+1353	mousse	dish
+1354	bigos	stew
+1355	corned beef hash	hash
+1356	ice	frozen dessert
+1357	easter egg	hard boiled egg
+1358	nougat bar	candy
+1359	spaghetti	pasta
+1360	vitamin b2	b complex vitamin
+1361	sazerac	cocktail
+1362	wine sauce	sauce
+1363	munich beer	lager
+1364	fish stick	dish
+1365	culture medium	food
+1366	dainty	nutriment
+1367	tostada	dish
+1368	horehound	candy
+1369	miso	spread
+1370	garlic butter	spread
+1371	soda cracker	cracker
+1372	whiskey	liquor
+1373	brownie mix	ready mix
+1374	sage	herb
+1375	bean curd	curd
+1376	english muffin	bread
+1377	plain flour	flour
+1378	cafe royale	coffee
+1379	frog legs	dish
+1380	k ration	field ration
+1381	tartare sauce	sauce
+1382	tisane	herb tea
+1383	wine vinegar	vinegar
+1384	coriander	herb
+1385	sack	white wine
+1386	chili	dish
+1387	marshmallow	candy
+1388	bap	bread
+1389	candied citrus peel	candied fruit
+1390	swizzle	mixed drink
+1391	pearl barley	barley
+1392	hunter's sauce	sauce
+1393	fondue	dish
+1394	brew	alcohol
+1395	marinara	spaghetti sauce
+1396	clove	spice
+1397	tom and jerry	hot toddy
+1398	puree	nutriment
+1399	bitter	ale
+1400	winter savory	savory
+1401	yak's milk	milk
+1402	hydromel	beverage
+1403	pickle	relish
+1404	pease pudding	pudding
+1405	hardtack	biscuit
+1406	rotgut	alcohol
+1407	fish cake	patty
+1408	vitamin b1	b complex vitamin
+1409	poteen	irish
+1410	smorgasbord	buffet
+1411	lemonade	fruit drink
+1412	colbert	sauce
+1413	mole	sauce
+1414	wild rice	grain
+1415	stick	margarine
+1416	snack food	dish
+1417	ready mix	mix
+1418	wiener roast	cookout
+1419	ramekin	dish
+1420	zinfandel	red wine
+1421	chocolate mousse	mousse
+1422	jujube	gumdrop
+1423	beef fondue	fondue
+1424	dragee	candy
+1425	marmalade	conserve
+1426	creme caramel	custard
+1427	white pepper	pepper
+1428	ham and eggs	dish
+1429	maraschino	liqueur
+1430	steamed pudding	pudding
+1431	fines herbes	herb
+1432	ginger beer	beverage
+1433	split	frozen dessert
+1434	boston baked beans	dish
+1435	boiled egg	dish
+1436	gravy	sauce
+1437	zwieback	toast
+1438	marrow	dainty
+1439	whey	dairy product
+1440	corn	grain
+1441	harvey wallbanger	cocktail
+1442	white sauce	sauce
+1443	easter egg	candy
+1444	saltine	cracker
+1445	mince	nutriment
+1446	orange marmalade	marmalade
+1447	dark bread	bread
+1448	vichy water	mineral water
+1449	flavorer	ingredient
+1450	barley water	broth
+1451	open face sandwich	sandwich
+1452	beef goulash	goulash
+1453	sherbert	frozen dessert
+1454	cocktail sauce	sauce
+1455	pigs in blankets	hors d'oeuvre
+1456	waldorf salad	fruit salad
+1457	curry powder	flavorer
+1458	brown rice	rice
+1459	carrot stick	crudites
+1460	forcemeat	stuffing
+1461	sauce	condiment
+1462	parker house roll	bun
+1463	chocolate kiss	kiss
+1464	mace	spice
+1465	comfrey	herb
+1466	jamaica rum	rum
+1467	butterscotch	candy
+1468	gum ball	chewing gum
+1469	moselle	white wine
+1470	meal	nutriment
+1471	altar wine	wine
+1472	pudding	dessert
+1473	nut bread	quick bread
+1474	lobster butter	spread
+1475	syrup	sweetening
+1476	geneva	gin
+1477	goats' milk	milk
+1478	process cheese	cheese
+1479	danish	sweet roll
+1480	chicken provencale	dish
+1481	fennel	herb
+1482	beef broth	broth
+1483	rob roy	manhattan
+1484	egg	foodstuff
+1485	sicilian pizza	pizza
+1486	chicken taco	taco
+1487	california wine	wine
+1488	rissole	dish
+1489	escalope de veau orloff	dish
+1490	mincemeat	concoction
+1491	ingredient	foodstuff
+1492	pilaf	dish
+1493	dough	concoction
+1494	cottage cheese	cheese
+1495	shrimp butter	spread
+1496	mixer	beverage
+1497	potato salad	salad
+1498	perishable	foodstuff
+1499	philter	potion
+1500	custard	dish
+1501	champagne cup	cup
+1502	soft diet	diet
+1503	creme de menthe	liqueur
+1504	pantothenic acid	b complex vitamin
+1505	salmagundi	salad
+1506	goat cheese	cheese
+1507	meringue kiss	kiss
+1508	soft pretzel	pretzel
+1509	pancake batter	batter
+1510	julep	highball
+1511	tokay	wine
+1512	cider vinegar	vinegar
+1513	bullshot	cocktail
+1514	salad cream	dressing
+1515	home fries	potato
+1516	crystallized ginger	candied fruit
+1517	tomato juice	juice
+1518	fast food	nutriment
+1519	anise	flavorer
+1520	piccalilli	relish
+1521	poulette	sauce
+1522	nan	bread
+1523	rosemary	herb
+1524	mint sauce	condiment
+1525	applesauce	dish
+1526	chow	fare
+1527	split pea soup	soup
+1528	gravy	juice
+1529	rice	grain
+1530	agar	culture medium
+1531	roughage	foodstuff
+1532	comestible	food
+1533	cocoa	beverage
+1534	candy egg	easter egg
+1535	red wine	wine
+1536	frozen yogurt	frozen dessert
+1537	rat cheese	cheddar
+1538	eau de vie	brandy
+1539	bird feed	feed
+1540	tahini	spread
+1541	anadama bread	bread
+1542	moo goo gai pan	dish
+1543	chardonnay	white wine
+1544	kedgeree	dish
+1545	creme de cacao	liqueur
+1546	grape jelly	jelly
+1547	sweetening	flavorer
+1548	swedish meatball	meatball
+1549	cafe au lait	coffee
+1550	mornay sauce	cheese sauce
+1551	cobbler	highball
+1552	sour cream	cream
+1553	farina	meal
+1554	falafel	dish
+1555	bean dip	dip
+1556	caffe latte	espresso
+1557	mescal	liquor
+1558	dill pickle	pickle
+1559	potion	beverage
+1560	milk punch	punch
+1561	shrimp cocktail	cocktail
+1562	whole wheat flour	wheat flour
+1563	bouillon	broth
+1564	cappuccino	coffee
+1565	codfish ball	fish cake
+1566	rock candy	candy
+1567	weizenbock	weissbier
+1568	candied fruit	confiture
+1569	soave	white wine
+1570	blue cheese dressing	dressing
+1571	cheshire cheese	cheese
+1572	goulash	stew
+1573	tomato sauce	spaghetti sauce
+1574	dom pedro	mixed drink
+1575	stew	dish

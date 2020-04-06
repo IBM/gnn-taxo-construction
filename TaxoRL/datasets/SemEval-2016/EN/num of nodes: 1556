@@ -1,0 +1,33 @@
+num of nodes: 1556
+1587
+10087
+630
+data:
+num of nodes: 452
+465
+2553
+196
+data:
+num of nodes: 261
+261
+2521
+96
+data:
+num of nodes: 1486
+1533
+27430
+855
+data:
+num of nodes: 429
+441
+2841
+223
+data:
+num of nodes: 125
+124
+889
+81
+
+import heapq
+#topk = int(len(colsum)/100)
+value = heapq.nlargest(5, colsum)[-1]

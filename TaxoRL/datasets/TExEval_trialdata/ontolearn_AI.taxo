@@ -1,0 +1,2386 @@
+0	abstraction	entity
+1	event	abstraction
+2	act,action,activity	event
+3	knowledge	abstraction
+4	procedure,process	act,action,activity
+5	knowledge domain,knowledge base,domain	knowledge
+6	system	abstraction
+7	representation	knowledge
+8	property	abstraction
+9	quantity,measure	abstraction
+10	algorithm	procedure,process
+11	methodology,method	knowledge domain,knowledge base,domain
+12	communication	abstraction
+13	state	si
+14	metric system	system
+15	si	metric system
+16	model,framework	representation
+17	technique,technology,approach	knowledge domain,knowledge base,domain
+18	data,information	abstraction
+19	concept	property
+20	amount	quantity,measure
+21	quality	property
+22	inference	reasoning process
+23	reasoning process	procedure,process
+24	theory	knowledge domain,knowledge base,domain
+25	data structure	knowledge domain,knowledge base,domain
+26	degree	amount
+27	rule	degree
+28	phenomenon	procedure,process
+29	expression	communication
+30	instruction	act,action,activity
+31	statement	instruction
+32	reasoning	inference
+33	code	communication
+34	feature	concept
+35	graph	data structure
+36	function	act,action,activity
+37	structure	model,framework
+38	agent	incorrect information
+39	incorrect information	data,information
+40	process of making	procedure,process
+41	source	source code
+42	source code	code
+43	mapping	process of making
+44	process of breaking	procedure,process
+45	analysis	process of breaking
+46	logic	reasoning
+47	mechanism	theory
+48	ability	quality
+49	database	data,information
+50	program	data,information
+51	care	state
+52	moving	process of leaving
+53	planning	process of formulating
+54	process of formulating	procedure,process
+55	process of leaving	procedure,process
+56	search	care
+57	translation	moving
+58	correction	quantity,measure
+59	equation	correction
+60	relation	abstraction
+61	sequence	succession
+62	string	database
+63	succession	act,action,activity
+64	vector	methodology,method
+65	value	state
+66	directed graph	graph
+67	discipline,study,field of study	knowledge domain,knowledge base,domain
+68	emergent property	phenomenon
+69	intelligence	emergent property
+70	language	communication
+71	learning	scholarly knowledge
+72	scholarly knowledge	knowledge
+73	sentence	translation
+74	operator	mapping
+75	affine	equation
+76	environment	affine
+77	length	feature
+78	path	sequence
+79	pattern	model,framework
+80	space	state
+81	computer program	algorithm
+82	inference rule	intelligence
+83	node	representation
+84	robot	mechanism
+85	tree	length
+86	probability distribution	concept
+87	digraph	directed graph
+88	heuristic	rule
+89	network	digraph
+90	theorem	statement
+91	application	expression
+92	task	procedure,process
+93	variable	quantity,measure
+94	magnitude	vector
+95	consequence	phenomenon
+96	definition	source
+97	device	instrumentality
+98	instrumentality	entity
+99	ratio	magnitude
+100	table	methodology,method
+101	clause	expression
+102	determination	act,action,activity
+103	distance	amount
+104	generalization	inference rule
+105	matrix	table
+106	plan	act,action,activity
+107	process of constructing	procedure,process
+108	resource	source
+109	science	discipline,study,field of study
+110	search algorithm	algorithm
+111	standardized procedure	procedure,process
+112	test	standardized procedure
+113	person	entity
+114	construction	process of constructing
+115	distribution	probability distribution
+116	formula	rule
+117	motion	act,action,activity
+118	probability	event
+119	semantic	string
+120	aggregate	analysis
+121	assignment	mapping
+122	generation	aggregate
+123	assumption	statement
+124	complexity	quantity,measure
+125	decomposition	phenomenon
+126	development	state
+127	essence	feature
+128	indexing	system
+129	neural network	network
+130	notation	act,action,activity
+131	operation	procedure,process
+132	optimization algorithm	algorithm
+133	parameter	quantity,measure
+134	principle	essence
+135	process of identifying	procedure,process
+136	resolution	quality
+137	result	consequence
+138	constraint	path
+139	text	computing
+140	utility function	instance method
+141	alphanumeric string	string
+142	architecture	descriptive representation
+143	calculus	decision-making method
+144	classifier	person
+145	computation	simulated annealing
+146	computer science	algorithm
+147	computer system	system
+148	computer virus	program
+149	computing	procedure,process
+150	curve	software technique
+151	decision-making method	methodology,method
+152	descriptive representation	representation
+153	dynamic programming	gradient descent
+154	effect	state
+155	evaluation	determination
+156	expert system	system
+157	explanation	justification
+158	gradient descent	optimization algorithm
+159	hypothesis	explanation
+160	instance method	methodology,method
+161	interpretation	assignment
+162	justification	statement
+163	metric	quantity,measure
+164	paradigm	model,framework
+165	power	notation
+166	process of putting	procedure,process
+167	simulated annealing	generalization
+168	software technique	technique,technology,approach
+169	sort	algorithm
+170	sorting algorithm	process of putting
+171	symbol	alphanumeric string
+172	query	mapping
+173	utility	computer program
+174	ai	computer virus
+175	approximation	technique,technology,approach
+176	being	state
+177	best-first search	search algorithm
+178	circuit	device
+179	communication system	system
+180	compound statement	statement
+181	concise representation	representation
+182	condition	test
+183	context	sentence
+184	corpus	reference system
+185	cost	consequence
+186	data type	definition
+187	decision	determination
+188	decision problem	partitioning
+189	depth-first search	best-first search
+190	difference	quality
+191	encoding	act,action,activity
+192	extension	inference rule
+193	first-order logic	logic
+194	grammar	structure
+195	graph search algorithm	search algorithm
+196	learning algorithm	algorithm
+197	link	two-way radio communication system
+198	ontology	system
+199	partitioning	analysis
+200	phrase	expression
+201	place	space
+202	platform	computer system
+203	process of becoming	procedure,process
+204	process of determining	procedure,process
+205	process of imitating	procedure,process
+206	process of using	procedure,process
+207	programming language	code
+208	proposition	formula
+209	recognition	state
+210	reference system	system
+211	requirement	act,action,activity
+212	research	development
+213	selection	operator
+214	service	act,action,activity
+215	simulation	process of imitating
+216	size	ratio
+217	time	quantity,measure
+218	two-way radio communication system	communication system
+219	binary relation	sort
+220	boolean function	assignment
+221	cutset	vertex
+222	kernel	scheme-like language
+223	acquisition	ability
+224	algorithmic representation	representation
+225	arrangement	structure
+226	association	data mining algorithm
+227	attempt	act,action,activity
+228	attribute	quality
+229	axiom	proposition
+230	binary tree	data structure
+231	bound	value
+232	breadth-first search	graph search algorithm
+233	chip	constraint logic programming language
+234	classification	association
+235	compact geometric representation	representation
+236	computational paradigm	paradigm
+237	computational technique	technique,technology,approach
+238	configuration space	compact geometric representation
+239	connected network	network
+240	connection	process of bringing
+241	connectivity	ability
+242	constraint logic programming language	logic programming language
+243	control	regulation
+244	data mining algorithm	algorithm
+245	decision process	procedure,process
+246	decision tree	arrangement
+247	deductive system	system
+248	design	plan
+249	diagram	graph
+250	directed acyclic graph	directed graph
+251	disjunction	compound statement
+252	encapsulation	process of enclosing
+253	evolution	extraction
+254	extraction	process of capturing
+255	formalism	computational paradigm
+256	function symbol	symbol
+257	generative model	process of growing graph
+258	graphical model	distribution
+259	importance	quality
+260	increase	process of becoming
+261	indeterminacy	source
+262	input	text
+263	integer	data type
+264	interval	distance
+265	knowledge engineering	acquisition
+266	limitation	quality
+267	line	quantity,measure
+268	logic programming language	notational system
+269	machine learning	technique,technology,approach
+270	map	function
+271	measurement	act,action,activity
+272	modeling	construction
+273	notational system	system
+274	order	inference
+275	package,software,software system	code
+276	posterior probability	probability
+277	predicate	sentence
+278	process of bringing	procedure,process
+279	process of capturing	procedure,process
+280	process of converting	procedure,process
+281	process of enclosing	procedure,process
+282	process of finding	procedure,process
+283	process of growing graph	procedure,process
+284	processor	chip
+285	rate	ratio
+286	reduction	procedure,process
+287	region	knowledge domain,knowledge base,domain
+288	regulation	ability
+289	relationship	relation
+290	role	act,action,activity
+291	scheme-like language	language
+292	search method	methodology,method
+293	search tree	representation
+294	segment	path
+295	sensor model	algorithmic representation
+296	sign	event
+297	situation	state
+298	software development	translation
+299	state-space search	search
+300	strategy	science
+301	synapse	connection
+302	template	structure
+303	tree structure	data structure
+304	vehicle	entity
+305	vertex	node
+306	web	connectivity
+307	acyclic circuit	combinational logic
+308	adjacency list	methodology,method
+309	adjoining grammar	leaf node
+310	anaphora	phenomenon
+311	applied statistic	fraction
+312	arithmetic notation	programming language
+313	artificial intelligence research	with domain
+314	automatic pilot	state
+315	automatic programming	use ofsearch technique
+316	axiomatic definition	definition
+317	backtracking search	uninformed search algorithm
+318	backward-chaining technique	technique,technology,approach
+319	basis function	gaussian
+320	baum-welch algorithm	reach
+321	bayesian learning	process of determining
+322	bel belief about state	state
+323	belief	quality
+324	brain	computer virus
+325	case-based reasoning	principle
+326	causal support	analog
+327	causal theory	rule
+328	classification problem	posterior probability
+329	clustering method	methodology,method
+330	completeness of resolution	consequence
+331	computational complexity	computer science
+332	computational linguistics	engineering
+333	constraint optimization	model,framework
+334	control knowledge	tlplan system
+335	decision tree expressiveness	decision tree
+336	deterministic automaton	concept
+337	dfs	depth
+338	discourse coherence	scalar phenomenon
+339	domain adaptation	importance
+340	electronic circuits domain	knowledge domain,knowledge base,domain
+341	equivalence class	node
+342	event detection	trigger
+343	expected utility	model,framework
+344	explicit representation	map
+345	feature vector	generation
+346	flow of information	capacity
+347	gain	advantageous quality
+348	goal formulation	situation
+349	goal predicate	act,action,activity
+350	heuristic function	gain ratio
+351	hierarchical planning	source
+352	human user	resource
+353	incomplete information	decision rule
+354	inheritance with exception	pattern
+355	input resolution	definition
+356	intractability	state
+357	isa link	node
+358	kernel matrix	diffusion kernel method
+359	key word	slowest search selection
+360	language origin	theory
+361	leak node	source
+362	learning scheme	sort
+363	lexical item	structure
+364	lexical-functional grammar	constraint based theory
+365	linear classifier	algorithm
+366	linear separability	concept
+367	logical agent	encapsulation
+368	machine intelligence	with computational technique
+369	most technique	technique,technology,approach
+370	multi-agent planning	generation
+371	neural computation	macroscopic phenomenon
+372	neural network expressiveness	neural network
+373	representation formalism	naturalness
+374	testing	machine learning algorithm
+375	utterance	ability
+376	ability of agent	ability
+377	absence	state
+378	abstract algebra	operation
+379	abstract argumentation framework	monotonic deductive system
+380	abstract noun	state
+381	abstract operator	operator
+382	abstract sensor	value
+383	abstraction hierarchy	tree
+384	abstraction planning	planning
+385	access function	function
+386	access path	data path
+387	accurate classifier	classifier
+388	accurate prediction	prediction
+389	acoustic model	model,framework
+390	acoustic signal	signal
+391	acoustic-phonetic rule	rule
+392	acquisition of adaptation knowledge	knowledge
+393	acquisition of knowledge	feature
+394	acquisition tool	editor
+395	action model	model,framework
+396	action theory	analysis
+397	action-utility table	table
+398	activation function	output activity
+399	activation level	quantity,measure
+400	active agent	agent
+401	active learning	instructional method
+402	active vision	technique,technology,approach
+403	actor architecture	architecture
+404	actor model of computation	model,framework
+405	actuator	mechanism
+406	acyclic graph	directed graph
+407	adaptive control	control method
+408	adaptive control theory	control theory
+409	adaptive dynamic programming	on-line tuning method
+410	adaptive network	network
+411	adaptive planning	technique,technology,approach
+412	addition of knowledge	knowledge
+413	additive utility function	utility function
+414	additivity of utility function	utility function
+415	adjacency matrix	matrix
+416	adjective phrase	phrase
+417	adl formalism planning	planning
+418	admissible heuristic	heuristic
+419	advantage	quality
+420	advantageous quality	quality
+421	advice taker	program
+422	affinity graph	undirected weighted graph
+423	agent architecture	architecture
+424	agent design	act,action,activity
+425	agent function	function
+426	agent-based software engineering	technique,technology,approach
+427	agent-oriented system	system
+428	agreement	state
+429	airflow simulation	simulation
+430	algebra of feature	feature
+431	algebraic relation	relation
+432	algorithm of adaptation	algorithm
+433	algorithm of figure	algorithm
+434	algorithm resolution	resolution
+435	algorithm template	template
+436	algorithmic compatibility	property
+437	algorithmic complexity	size
+438	alignment method	similarity measure
+439	alpha-beta pruning	search algorithm
+440	alpha-beta search	methodology,method
+441	ambiguous sentence	sentence
+442	analog	computer program
+443	analog process	procedure,process
+444	analogical language	language
+445	analogical mapping	matching process
+446	analogical reasoning	reasoning
+447	analysis of algorithm	computer science
+448	analysis of complex scene	analysis
+449	analysis of document corpus	analysis
+450	analysis of gene expression	research
+451	analysis of information processing system	analysis
+452	analysis of time	analysis
+453	analysis of verb	analysis
+454	analytic sentence	sentence
+455	analytical expression	expression
+456	anaphor predicate	predicate
+457	anaphora resolution	process of determining
+458	annealing	process of heating
+459	answer set programming	technique,technology,approach
+460	anytime algorithm	iterative refinement algorithm
+461	apparent motion	motion
+462	appealing technique	technique,technology,approach
+463	applicable operator	operator
+464	application domain	context
+465	application of artificial intelligence	application
+466	application of decision analysis	application
+467	application of machine learning	application
+468	apposition	quality
+469	approximate counting	probabilistic algorithm
+470	approximately correct hypothesis	hypothesis
+471	approximation algorithm	estimation algorithm
+472	arbitrary first-order sentence	theorem
+473	architecture for speech recognition	speech recognition
+474	argument	variable
+475	argumentation tree	tree
+476	arithmetic operation	dealing
+477	array	vector
+478	artificial agent	non-human entity
+479	artificial environment	environment
+480	artificial intelligence	quality
+481	artificial intelligence application	application
+482	artificial intelligence programming language	programming language
+483	asbestos removal	process of removing
+484	assembly planning	generation
+485	assertion	statement
+486	assistive technology	technique,technology,approach
+487	association graph	graph
+488	associative memory	system
+489	associative relation	relation
+490	assumption-based system	system
+491	asymptotic analysis	methodology,method
+492	asynchronous conversation	conversation
+493	asynchronous dynamic programming	dynamic programming
+494	atomic concept	representation
+495	atomic event	happening
+496	atomic sentence	declarative sentence
+497	audio recorder	easy-to-use program
+498	augmented transition network	recursive transition network
+499	autoepistemic logic	nonmonotonic logic
+500	automated debugging	technique,technology,approach
+501	automated reasoning	process of searching
+502	automatic recognition	recognition
+503	automatic theorem	theorem
+504	automation of reasoning	reasoning
+505	automaton	mechanism
+506	automaton program	program
+507	automaton pruning	pruning
+508	autonomous agent	computer simulation
+509	autonomous driving	environment
+510	autonomous land vehicle	vehicle
+511	autonomous robot	robot
+512	autonomous vehicle	driverless system
+513	autonomous vehicle underwater	autonomous vehicle
+514	auv	system
+515	average case analysis	analysis
+516	axiom scheme of knowledge	scheme
+517	b-tree	structure
+518	back-propagation	training algorithm
+519	backed-up value	value
+520	background assumption	assumption
+521	background knowledge	experience
+522	background process	procedure,process
+523	backjumping	technique,technology,approach
+524	backtracking	depth-first search
+525	backus-naur form	meta language
+526	backward chaining	depth-first search
+527	backward state-space search	state-space search
+528	bang-bang control	feedback mechanism
+529	bar code	pattern
+530	base case	state
+531	base language method	methodology,method
+532	base relation	data structure
+533	baseline	procedure,process
+534	basic action theory	sentence
+535	bayes' rule	rule
+536	bayesian	model,framework
+537	bayesian network	graphical model
+538	bayesian updating	probabilistic updating procedure
+539	beam search	heuristic
+540	behavior	act,action,activity
+541	behavior-based robotics	robotics
+542	behavior-based system	system
+543	behavioral module	behavior-based system
+544	behavioral theory	theory
+545	behaviour of agent	agent
+546	belief function	bayesian
+547	belief network	representation
+548	belief network construction	construction
+549	belief network inference	inference
+550	belief network inference complexity	complexity
+551	belief network learning	learning
+552	belief propagation	iterative algorithm
+553	bellman equation	equation
+554	benchmark	routine
+555	benchmarking	process of identifying
+556	biconditional	compound statement
+557	bidirectional search	graph search algorithm
+558	bigram model	simplification
+559	bilingual dictionary	resource
+560	bilingual lexicon	resource
+561	bilingual parallel corpus	parallel corpus
+562	binary classification	methodology,method
+563	binary constraint	constraint
+564	binary dag	dag
+565	binary decision diagram	concise representation
+566	binary heap	heap
+567	binary search	search
+568	binary space partition	binary tree
+569	biometric method	methodology,method
+570	bit of information	data,information
+571	blackboard architecture	memory space
+572	blind search	search
+573	block	region
+574	blocks world	theory
+575	blocks world planning	planning
+576	blocks-world learning	learning
+577	bolt	mechanism
+578	boltzmann machine	model,framework
+579	boolean algebra	logic
+580	boolean expression	statement
+581	boolean formula	parenthesized expression
+582	boolean logic	boolean algebra
+583	boolean query	query
+584	boolean variable	place
+585	boruvka's algorithm	algorithm
+586	bottom-up dynamic programming	self-constructed test tree
+587	bound computation	computation
+588	bound search	search
+589	bounded indeterminacy	indeterminacy
+590	bounded optimality	technique,technology,approach
+591	bounded-error planning	planning
+592	boyer-moore algorithm	knuth-morris-pratt algorithm
+593	brain computational power	power
+594	brain state	state
+595	branch-and-bound search	algorithm
+596	branching factor	ratio
+597	breadth first search	breadth-first search
+598	breadth first search tree	search tree
+599	broadest search	search
+600	bsp tree	binary tree
+601	bubble function	function
+602	bucket sort	sorting algorithm
+603	bug	fault
+604	built-in knowledge	knowledge
+605	c configuration space	configuration space
+606	c-buridan	algorithm
+607	canonical distribution	entropy distribution
+608	capacity	ability
+609	cardinal direction calculus	calculus
+610	case base	structure
+611	case-based planning	problem-solving method
+612	categorial grammar	technique,technology,approach
+613	categorization task	task
+614	causal diagram	directed graph
+615	causal graph	directed acyclic graph
+616	causal inference	procedure,process
+617	causal link	link
+618	causal model	model,framework
+619	causal network	bayesian network
+620	causal relation	interpropositional relation
+621	causal rule	expression
+622	causal semantic	semantic
+623	causation	belief
+624	cell decomposition	partition
+625	certainty equivalent	value
+626	certainty factor	methodology,method
+627	character	person
+628	character string	string
+629	charge-coupled device	system
+630	chart	data structure
+631	chart parser	parsing algorithm
+632	checkers learning	learning
+633	checking	web application
+634	chess automaton	mechanism
+635	christofides' heuristic	heuristic
+636	chronological backtracking	algorithm
+637	class probability	probability
+638	class variable	variable
+639	classification accuracy	ability
+640	classification function	function
+641	classification task	task
+642	cleaning robot	robot
+643	clever indexing	indexing
+644	closure resolution	resolution
+645	cluster assignment matrix	matrix
+646	cluster ensemble	estimation
+647	clustering	act,action,activity
+648	clustering result	result
+649	cnf decomposition	decomposition
+650	coalitional game	system
+651	cognitive architecture	advantage
+652	cognitive modelling	discipline,study,field of study
+653	cognitive psychology	discipline,study,field of study
+654	cognitive robotics	reasoning
+655	cognitive science	attempt
+656	cognitive skill	ability
+657	coherence relation	relation
+658	collaborative filtering	algorithm
+659	collective computation	analog process
+660	collective decision-making	functioning
+661	color	property
+662	combinational circuit	circuit
+663	combinational logic	logic
+664	combinatorial auction	mechanism
+665	combinatory categorial grammar	lexicalized formalism
+666	combinatory logic	logic
+667	combined indexing	indexing
+668	commitment protocol	protocol
+669	commonsense ontology	construction
+670	commonsense rule	rule
+671	communicating agent	proactive agent
+672	communication channel	methodology,method
+673	communication protocol	rule
+674	comparison	evaluation
+675	competitive ratio	performance measure
+676	compilation complexity	complexity
+677	compilation language	language
+678	compilation time	time
+679	compiler	person
+680	complete algorithm	algorithm
+681	complete proof procedure	procedure,process
+682	completeness of a plan	plan
+683	completeness of a proof procedure	procedure,process
+684	completeness of a search algorithm	algorithm
+685	completeness search	search
+686	completeness theorem	theorem
+687	complex	structure
+688	complexity analysis	most technique
+689	compliant motion	motion
+690	component analysis	analysis
+691	component graph	graph
+692	component technology	technique,technology,approach
+693	composite decision process	decision process
+694	composite heuristic	heuristic
+695	composite object	encapsulation
+696	compositional semantic	semantic
+697	compression	data file
+698	computability	science
+699	computation model	model,framework
+700	computation time	time
+701	computational biology	development
+702	computational chemistry software program	software program
+703	computational complexity theory	hardness
+704	computational cost	cost
+705	computational efficiency	limitation
+706	computational learning theory	attempt
+707	computational model	model,framework
+708	computational model of discourse	computational model
+709	computational property	emergent property
+710	computational resource	resource
+711	computer algorithm	algorithm
+712	computer file	block
+713	computer language	language
+714	computer simulation	technique,technology,approach
+715	computer vision	computer science
+716	computing system	system
+717	conceptual clustering	clustering
+718	conceptual graph	representation
+719	condition-action rule	expression
+720	conditional action	vhdl process
+721	conditional effect	effect
+722	conditional entropy	conditional probability
+723	conditional event	expression
+724	conditional independence	assumption
+725	conditional link	link
+726	conditional planning	planning
+727	conditional probability	theory
+728	conditional probability table	stochastic matrix
+729	conditional random field	discriminative maximum entropy model
+730	conditioning bounded cutset	cutset
+731	conditioning cutset	cutset
+732	confidence factor	numerical value
+733	confidence interval	interval
+734	configuration space obstacle	configuration space
+735	confirmation theory	logic
+736	conflict resolution	range
+737	conjunction	relation
+738	conjunctive normal form	boolean expression
+739	conjunctive probability	probability
+740	conjunctive query	formula
+741	connection method	methodology,method
+742	connectionism	modeling
+743	consequence relation	binary relation
+744	consideration	data,information
+745	consistency algorithm	algorithm
+746	consistency checker	program
+747	consistency checking	act,action,activity
+748	consistent decomposition	decomposition
+749	consistent hypothesis	map hypothesis
+750	consistent plan	plan
+751	constant symbol	o-ary function symbol
+752	constrained shortest path finding	finding
+753	constraint based theory	theory
+754	constraint calculus	calculus
+755	constraint graph	directed graph
+756	constraint logic programming	declarative programming language
+757	constraint network	model,framework
+758	constraint propagation	process of applying
+759	constraint satisfaction	procedure,process
+760	constraint satisfaction problem	structure
+761	constraint satisfaction search	search
+762	construct	concept
+763	constructive induction	methodology,method
+764	content-based image retrieval	technique,technology,approach
+765	context-free grammar	generative model
+766	context-sensitive grammar	password generation
+767	contingency	state
+768	contingency planning	process of identifying
+769	continuous environment	environment
+770	contour of a state space	space
+771	control method	methodology,method
+772	control rule	rule
+773	control system	system
+774	control theory	theory
+775	conventional sign	sign
+776	conversation	complex
+777	conversational agent	human-computer dialogue system
+778	convex hull	data structure
+779	convex polygon	polygon
+780	convolution	operation
+781	cook's theorem	theorem
+782	cooperative agent	technique,technology,approach
+783	cooperative coevolution	mechanism
+784	cooperative computation	computation
+785	core algorithm	algorithm
+786	core language engine	domainindependent system
+787	coreference resolution	process of identifying
+788	correlation analysis	methodology,method
+789	correlation coefficient	methodology,method
+790	correspondence theory	theory
+791	cosine similarity	vector
+792	cost function	derivative
+793	covariance function	function
+794	covariance matrix	matrix
+795	creating	act,action,activity
+796	cross ratio	function
+797	cross validation	process of testing
+798	cross-correlation	operation
+799	cross-entropy based filter technique	technique,technology,approach
+800	cross-indexing	methodology,method
+801	cross-validation	mainstay
+802	cryptarithmetic problem	constraint satisfaction problem
+803	cryptographic algorithm	algorithm
+804	cryptography	discipline,study,field of study
+805	cumulative learning	machine learning research
+806	current-best-hypothesis search	search
+807	customary method	methodology,method
+808	d-separation	graphical property
+809	dag	tree
+810	data driven technique	technique,technology,approach
+811	data extraction	methodology,method
+812	data file	computer file
+813	data fusion	methodology,method
+814	data matrix	density
+815	data mining	methodology,method
+816	data mining technique	technique,technology,approach
+817	data modelling technique	technique,technology,approach
+818	data path	path
+819	data set	data,information
+820	data value	value
+821	data-base query	query
+822	data-directed inference	inference
+823	data-driven inference	inference
+824	dcg	software development
+825	dcop algorithm	algorithm
+826	dealing	methodology,method
+827	debugging	bug
+828	decision analysis	evaluation
+829	decision analyst	program
+830	decision analytic approach	technique,technology,approach
+831	decision list	representation
+832	decision lists learning	learning
+833	decision maker	resolve
+834	decision making	selection process
+835	decision network evaluation	evaluation
+836	decision node	assertion
+837	decision procedure	procedure,process
+838	decision rule	statement
+839	decision theory	theory
+840	decision tree learning	inductive learning process
+841	decision tree pruning	process of replacing
+842	decision trees learning	methodology,method
+843	decision-making agent	agent
+844	decision-making process	procedure,process
+845	decision-theoretic agent	agent
+846	decision-theoretic planning	planning
+847	declarative approach	technique,technology,approach
+848	declarative programming language	programming language
+849	declarative sentence	proposition
+850	decoding algorithm	algorithm
+851	decomposition tree	tree
+852	deduction system	system
+853	deductive approach	assumption
+854	default	value
+855	default logic	non-monotonic logic
+856	default reasoning	knowledge representation
+857	default rule	rule
+858	default value	value
+859	deferred planning	planning
+860	definite clause grammar	rewriting system
+861	degree of consistency	degree
+862	degree of similarity	degree
+863	deliberate ambiguity	operator
+864	demodulation	process of filtering
+865	dempster-shafer theory	generalization
+866	dempster's rule	rule
+867	density	property
+868	dependency analysis	directed acyclic graph
+869	dependency grammar	theory
+870	dependency graph	directed graph
+871	dependency tree	representation
+872	dependency-directed backtracking	search strategy
+873	depth	ability
+874	depth first search	depth-first search
+875	depth first search tree	search tree
+876	depth-limited search	dfs
+877	derivation	background process
+878	derivation tree	mechanism
+879	derivational morphology	morphology
+880	derivative	expression
+881	derived sentence	sentence
+882	description logic	model,framework
+883	descriptive information	data,information
+884	descriptive theory	behavioral theory
+885	detachment	act,action,activity
+886	deterministic algorithm	algorithm
+887	deterministic environment	environment
+888	deterministic finite automaton	model,framework
+889	deterministic node	node
+890	deterministic selection	fitness-based selection
+891	dewey decimal system	system
+892	diagnostic inference	inference
+893	diagnostic knowledge	knowledge
+894	diagnostic method	methodology,method
+895	diagnostic rule	rule
+896	diagonal matrix	symmetric matrix
+897	dialectical tree	tree
+898	dialogue act	act,action,activity
+899	diameter of a state space	space
+900	differential equation	algebraic relation
+901	diffusion kernel method	kernel method
+902	digital circuit	circuit
+903	dijkstra's algorithm	algorithm
+904	dimensionality reduction	search
+905	direct graph	node structure
+906	disambiguation	process of retaining
+907	discontinuous function	function
+908	discourse intention	state
+909	discourse understanding	process of updating
+910	discrete environment	environment
+911	discrete event	technique,technology,approach
+912	discretization	process of converting
+913	discriminant analysis	procedure,process
+914	discrimination net	structure
+915	discriminative maximum entropy model	model,framework
+916	discriminative model	probability model
+917	disjoint set	data structure
+918	disjoint subset	subset
+919	disjunction of literal	disjunction
+920	disjunctive effect	effect
+921	distance function	distance
+922	distance method	methodology,method
+923	distance metric learning	parametric technique
+924	distributed encoding	encoding
+925	distributed processing	functionality
+926	distribution of agent	distribution
+927	distribution of class	distribution
+928	divide and conquer algorithm	algorithm
+929	document corpus	corpus
+930	dolev-yao model	model,framework
+931	domain closure effect	effect
+932	domain constraint	unary constraint
+933	domain knowledge	representation
+934	domain of a random variable	sample space
+935	domain of application	knowledge domain,knowledge base,domain
+936	domain of discourse	knowledge domain,knowledge base,domain
+937	domain of value	knowledge domain,knowledge base,domain
+938	domain theory	structure
+939	domain transition graph	graph representation
+940	domain-specific search engine	search engine
+941	domain independent system	system
+942	dominance	power
+943	domination of heuristic	heuristic
+944	dotted rule	data structure
+945	driverless system	system
+946	dropping condition	operator
+947	dynamic belief network	belief network
+948	dynamic conditional random field	conditional random field
+949	dynamic decision network	network
+950	dynamic environment	environment
+951	dynamic logic	language
+952	dynamic symbol	feature
+953	dynamic system	structure
+954	dynamic weighting	mechanism
+955	dynamical system	act,action,activity
+956	ease-based planning	planning
+957	easy-to-use program	program
+958	edge base	knowledge domain,knowledge base,domain
+959	edge detection	technique,technology,approach
+960	editor	program
+961	effective branching factor	quantity,measure
+962	egomotion	motion
+963	eigenvalue	embedding
+964	eigenvalue decomposition	decomposition
+965	electronic circuit	path
+966	em algorithm	algorithm
+967	embedding	methodology,method
+968	empirical evaluation	act,action,activity
+969	empirical result	result
+970	empirical study	report
+971	encoded message model	model,framework
+972	encryption methodology	methodology,method
+973	engineering	discipline,study,field of study
+974	entity tree	tree
+975	entropy distribution	distribution
+976	environment property	property
+977	environment simulator	program
+978	epipolar line	line
+979	episodic environment	environment
+980	epistemic logic	principle
+981	epistemic structure	structure
+982	equality symbol	symbol
+983	equivalence relation	binary relation
+984	error	difference
+985	error bound	bound
+986	error of a hypothesis	error
+987	error rate	rate
+988	estimation	process of making
+989	estimation algorithm	algorithm
+990	euclidean distance	integer
+991	euclidean space	generalization
+992	evaluation function	heuristic function
+993	event calculus	theory
+994	evidential corpus	corpus
+995	evolutionary programming	ai
+996	example character	character
+997	excellence	quality
+998	exchange of information	data,information
+999	excitatory synapse	synapse
+1000	execution mechanism	mechanism
+1001	execution monitoring	robot
+1002	execution time	platform
+1003	exhaustive decomposition	decomposition
+1004	existential elimination	procedure,process
+1005	existential graph	diagram
+1006	existential introduction	rule
+1007	existential quantifier	operator
+1008	existential restriction	path
+1009	expanded node	node
+1010	expansion of state	state
+1011	expansion operator	operator
+1012	expected case analysis	analysis
+1013	expectimax	minimax algorithm
+1014	expectimax value	value
+1015	expectimin value	value
+1016	expectiminimax	full-width search
+1017	expectiminimax complexity	complexity
+1018	experience	act,action,activity
+1019	experimental evaluation	act,action,activity
+1020	experimental methodology	methodology,method
+1021	experimental vehicle	vehicle
+1022	explanation-based learning	machine-learning approach
+1023	exploration function	function
+1024	exponential growth	growth
+1025	exponential increase	increase
+1026	expository text	text
+1027	expression pattern	pattern
+1028	expressive power	motivation
+1029	extension of description logic	extension
+1030	extraction process	procedure,process
+1031	extractive activity	act,action,activity
+1032	extrinsic property	property
+1033	f free space	space
+1034	face recognition	biometric method
+1035	factorization	resolution
+1036	family of inference relation	relation
+1037	family of programming language	language
+1038	fastest sorting algorithm	sorting algorithm
+1039	fault	quality
+1040	fcrfs model	model,framework
+1041	fdtd approach	technique,technology,approach
+1042	feature extraction	technique,technology,approach
+1043	feature of a state	feature
+1044	feature selection	process of selecting
+1045	feature selection method	evaluation
+1046	feature space	representation
+1047	feature subscription	feature
+1048	feed-forward network	acyclic graph
+1049	feed-forward neural network	function
+1050	feedback loop	service
+1051	feedback mechanism	mechanism
+1052	feedforward circuit	circuit
+1053	fermat's last theorem	theorem
+1054	fibonacci heap	tree
+1055	field of research	knowledge domain,knowledge base,domain
+1056	field value	value
+1057	figure of speech	language
+1058	finding	act,action,activity
+1059	fine-motion planning	planning
+1060	finite automaton	algorithm
+1061	finite element method	technique,technology,approach
+1062	finite state automaton	state automaton
+1063	finite state machine	computation model
+1064	finite-state automaton	abstraction
+1065	first-order language	act,action,activity
+1066	first-order logic semantics	first-order logic
+1067	first-order predicate calculus	logic
+1068	first-order probabilistic logic	first-order logic
+1069	first-order sentence	sentence
+1070	fitness function	function
+1071	fitness-based selection	selection
+1072	flow network	model,framework
+1073	foliation	process of forming
+1074	force sensor	device
+1075	formal grammar	rule
+1076	formal language	string
+1077	formal semantics	technique,technology,approach
+1078	formalization planning	planning
+1079	formation	feature
+1080	formulation	act,action,activity
+1081	fortran	system
+1082	forward chaining	intelligence method
+1083	forward checking	propagation procedure
+1084	forward-backward algorithm	algorithm
+1085	forward-chaining agent	agent
+1086	fraction	quotient
+1087	free variable	input
+1088	full power	power
+1089	full-width search	search
+1090	fully instantiated plan	plan
+1091	functional decomposition	analysis
+1092	functional dependency	statement
+1093	functional description	attribute
+1094	functional programming	logic
+1095	functionality	ability
+1096	functioning	procedure,process
+1097	fusion	state
+1098	fuzzy logic	technique,technology,approach
+1099	fuzzy set	model,framework
+1100	fuzzy set theory	sweeping statement
+1101	g activation function	activation function
+1102	g-set	structure
+1103	gain ratio	metric
+1104	game robot	robot
+1105	game theory	math
+1106	game tree	representation
+1107	game-theoretic consideration	consideration
+1108	gaussian	computational chemistry software program
+1109	gaussian distribution	distribution
+1110	gaussian elimination	algorithm
+1111	gaussian function	lineshape function
+1112	gaussian kernel	kernel
+1113	gaussian process	variable
+1114	gene expression pattern	indicator
+1115	general ontology	high-level ontology
+1116	general problem solver	program
+1117	general search	broadest search
+1118	generalised representation	representation
+1119	generalization hierarchy	abstraction
+1120	generalized cylinder	surface
+1121	generalized logic	logic
+1122	generalized phrase structure	phrase structure
+1123	generalized resolution	rule
+1124	genetic algorithm	computer program
+1125	genetic engineering	technique,technology,approach
+1126	geometric invariant	quantity,measure
+1127	glm regression algorithm	algorithm
+1128	goal representation	representation
+1129	goal-based agent	agent
+1130	goal-directed reasoning	reasoning
+1131	goal-driven approach	technique,technology,approach
+1132	goal-oriented theory	theory
+1133	gold standard	test
+1134	golog program	program
+1135	good old-fashioned ai	ai
+1136	goto	statement
+1137	gps	satellite-based navigation system
+1138	graceful degradation	process of using
+1139	grammar attribute	attribute
+1140	grammar formalism	model,framework
+1141	grammar induction	inductive logic programming
+1142	grammatical formalism	technique,technology,approach
+1143	graph algorithm	algorithm
+1144	graph coloring	register allocation algorithm
+1145	graph data structure	data structure
+1146	graph mining	technique,technology,approach
+1147	graph of predicate	graph
+1148	graph representation	representation
+1149	graphic representation	representation
+1150	graphical cluster validation technique	technique,technology,approach
+1151	graphical device	device
+1152	graphical property	property
+1153	graphical user interface	user interface
+1154	greedy agent	agent
+1155	greedy algorithm	optimization algorithm
+1156	greedy heuristic	heuristic
+1157	grid map	map
+1158	ground clause	clause
+1159	ground resolution theorem	theorem
+1160	ground term	variable-free tree structure
+1161	growth	process of becoming
+1162	guarded horn clause	union
+1163	hacker	programmer
+1164	halting problem	decision problem
+1165	happening	event
+1166	hardness	quality
+1167	hash function	cryptographic algorithm
+1168	hash table	lookup table
+1169	head of a clause	clause
+1170	heap	specialized tree-based data structure
+1171	heap property	property
+1172	heap selection	selection
+1173	heap sort	fastest sorting algorithm
+1174	herbrand base	model,framework
+1175	herbrand's theorem	theorem
+1176	heuristic rule	commonsense rule
+1177	heuristic search	computer algorithm
+1178	hidden markov model	stochastic process
+1179	hidden variable	variable
+1180	hierarchical abstraction	methodology,method
+1181	hierarchical clustering	clustering method
+1182	hierarchical decomposition	process of decomposing
+1183	hierarchical decomposition planning	planning
+1184	hierarchical organization	structure
+1185	hierarchical representation	methodology,method
+1186	hierarchical task network	planning system
+1187	high-level ontology	ontology
+1188	higher-order logic	logic
+1189	holonomic robot	robot
+1190	homeomorphism	similarity
+1191	hopfield network	network
+1192	horn clause	clause
+1193	horn logic	predicate logic
+1194	horn sentence	conjunction
+1195	htn model	model,framework
+1196	htn planning	planning
+1197	human cognition	act,action,activity
+1198	human decision maker	decision maker
+1199	human-computer dialogue system	system
+1200	human-computer interaction	analysis
+1201	human-robot interaction	being
+1202	humanoid robot	robot
+1203	hybrid approach	technique,technology,approach
+1204	hybrid model	polygonal model
+1205	hybrid mst algorithm	algorithm
+1206	hybrid system	system
+1207	hypothesis recognition	recognition
+1208	hypothesis space	hypothesis
+1209	hypothetical algorithm	algorithm
+1210	i-dt decision tree	decision tree
+1211	idealized representation	representation
+1212	identity relation	relation
+1213	if-then rule	expression
+1214	image annotation	descriptive information
+1215	image edge	feature
+1216	image formation	formation
+1217	image processing	technique,technology,approach
+1218	image reconstruction	technique,technology,approach
+1219	image retrieval	importance
+1220	immortal agent	agent
+1221	implication rule	expression
+1222	implicit representation	representation
+1223	incidence list	graph data structure
+1224	incidence matrix	matrix
+1225	inclusion axiom	axiom
+1226	incompleteness theorem	theorem
+1227	inconsistent heuristic	heuristic
+1228	incorporation	phenomenon
+1229	incremental algorithm	algorithm
+1230	incremental dynamic programming procedure	procedure,process
+1231	incremental learning	increase
+1232	incremental process	procedure,process
+1233	incremental search	search method
+1234	indefinite domain	knowledge domain,knowledge base,domain
+1235	index function	function
+1236	indexing scheme	methodology,method
+1237	indicator	quantity,measure
+1238	indirect speech act	speech act
+1239	induction	generation
+1240	induction algorithm	learning algorithm
+1241	induction hypothesis	hypothesis
+1242	induction of decision tree	induction
+1243	inductive inference	reasoning
+1244	inductive learning	learning
+1245	inductive learning process	learning process
+1246	inductive logic	system
+1247	inductive logic programming	machine learning
+1248	inference algorithm	algorithm
+1249	inference method	base language method
+1250	inference of relationship	inference
+1251	inference pattern	pattern
+1252	inference procedure	procedure,process
+1253	inference relation	relation
+1254	inflectional morphology	phenomenon
+1255	influence diagram	graphical device
+1256	information extraction	language processing
+1257	information gain	difference
+1258	information processing	process of receiving
+1259	information property	property
+1260	information retrieval	search approach
+1261	information theory	theory
+1262	information value theory	decision analytic approach
+1263	informed search	search
+1264	inheritance	ability
+1265	inhibitory synapse	synapse
+1266	initial state	state
+1267	initialization parameter	parameter
+1268	input clause	formula
+1269	input generalization	generalization
+1270	input method	system
+1271	input pattern	pattern
+1272	input string	string
+1273	input vector	vector
+1274	inquiry	search
+1275	instance checking	checking
+1276	instructional method	methodology,method
+1277	integer factorization	process of breaking
+1278	integer linear programming	technique,technology,approach
+1279	integrability	quality
+1280	integration	act,action,activity
+1281	intelligence method	methodology,method
+1282	intelligence test	test
+1283	intelligent action	fusion
+1284	intelligent agent	package,software,software system
+1285	intelligent room	room
+1286	intensional predicate	predicate logic sentence
+1287	intentional state	state
+1288	interaction graph	tree
+1289	intercausal inference	inference
+1290	intercausal reasoning	inference pattern
+1291	interleaving	procedure,process
+1292	interpretation semantic	semantic
+1293	interpropositional relation	relation
+1294	intersection	representation
+1295	intersective semantic	semantic
+1296	interval algebra	relation
+1297	interval-valued definition	definition
+1298	intradomain phenomenon	phenomenon
+1299	intrinsic property	member-name property
+1300	introspection	methodology,method
+1301	invariant shape representation	representation
+1302	inverse method	methodology,method
+1303	inverse resolution	algorithm
+1304	irrational behavior	behavior
+1305	irrationality	quality
+1306	item of information	data,information
+1307	item of knowledge	knowledge
+1308	iterative algorithm	algorithm
+1309	iterative cost	cost
+1310	iterative deepening	quality
+1311	iterative deepening search	strategy
+1312	iterative dynamic programming	methodology,method
+1313	iterative improvement	optimization
+1314	iterative improvement search	search
+1315	iterative refinement algorithm	algorithm
+1316	jacquard loom	loom
+1317	joint of a robot	robot
+1318	joint probability distribution	probability distribution
+1319	jordan curve theorem	construction
+1320	justification-based system	system
+1321	k-dl decision list	decision list
+1322	kalman filtering	recursive algorithm
+1323	kernel discriminant analysis	nonparametric technique
+1324	kernel function	smoothing technique
+1325	kernel learning	paradigm
+1326	kernel method	algorithm
+1327	kinematics	motion
+1328	kl divergence	metric
+1329	kl-one	knowledge representation system
+1330	knowledge acquisition	learning
+1331	knowledge compilation	process of transforming
+1332	knowledge effect	effect
+1333	knowledge engineer	computer system
+1334	knowledge engineering with uncertainty	knowledge engineering
+1335	knowledge level	quantity,measure
+1336	knowledge map	structure
+1337	knowledge property	property
+1338	knowledge representation	medium
+1339	knowledge representation language	representation language
+1340	knowledge representation system	system
+1341	knowledge source	source
+1342	knowledge-based agent	knowledge domain,knowledge base,domain
+1343	knowledge-based approach	technique,technology,approach
+1344	knowledge-based learning	learning
+1345	knowledge-based program	program
+1346	knowledge-based system	system
+1347	knowledge-based technique	absence
+1348	knuth-bendix algorithm	algorithm
+1349	knuth-morris-pratt algorithm	searching
+1350	kolmogorov complexity	quantity,measure
+1351	kruskal's algorithm	algorithm
+1352	label propagation	technique,technology,approach
+1353	language analysis	methodology,method
+1354	language model	model,framework
+1355	language perception	state
+1356	language processing	memory-based model
+1357	language understanding	process of grasping
+1358	laser range finder	distance
+1359	latent perceptron	perceptron
+1360	latent variable	variable
+1361	lattice theory	theory
+1362	leaf node	node
+1363	learning agent	mapping
+1364	learning architecture	design
+1365	learning curve	graph
+1366	learning process	procedure,process
+1367	learning rate	parameter
+1368	learning system	system
+1369	least commitment	concept
+1370	least mean square	initialization parameter
+1371	least-constraining-value heuristic	heuristic
+1372	lexical database	resource
+1373	lexical pattern	string
+1374	lexicalized formalism	formalism
+1375	library	resource
+1376	limited rational agent	rational agent
+1377	line orthogonality pattern	orthogonality pattern
+1378	line segment	segment
+1379	linear classification	place
+1380	linear combination	vector
+1381	linear equation	equation
+1382	linear input resolution	input resolution
+1383	linear order	function
+1384	linear plan	plan
+1385	linear program	optimization model
+1386	linear programming	discipline,study,field of study
+1387	linear regression	glm regression algorithm
+1388	linear resolution	resolution
+1389	linear transformation	concept
+1390	linearization	process of reducing
+1391	lineshape function	function
+1392	linguistic expression	expression
+1393	linked list	technique,technology,approach
+1394	linking curve	curve
+1395	local consistency	paradigm
+1396	local consistency algorithm	consistency algorithm
+1397	local encoding	encoding
+1398	local search	search
+1399	locally finite graph	graph
+1400	locally structured system	system
+1401	locus	scene
+1402	logic of relevance	logic
+1403	logic program	clause
+1404	logic programming	computer program
+1405	logic programming constraint	constraint
+1406	logic sampling	technique,technology,approach
+1407	logic string	string
+1408	logic theorist	computer program
+1409	logic variable	abstraction
+1410	logical assertion	statement
+1411	logical consequence	concept
+1412	logical constant	value
+1413	logical definition	definition
+1414	logical entailment	relation
+1415	logical equivalence	concept
+1416	logical expert system	expert system
+1417	logical formalism	formalism
+1418	logical formula	structure
+1419	logical implication	statement
+1420	logical inference	inference
+1421	logical interpretation	translation
+1422	logical notation	notation
+1423	logical positivism	technique,technology,approach
+1424	logical query	process of selecting feature
+1425	logical reasoning	process of using
+1426	logical semantic	semantic
+1427	logical sentence	sentence
+1428	logical symbol	operator
+1429	logical syntax	logic
+1430	logical variable	variable
+1431	logicism	thesis
+1432	logistic regression	regression
+1433	long-distance dependency	source
+1434	long-term memory	memory
+1435	longest common substring	substring
+1436	longitudinal control	control
+1437	lookup table	array
+1438	loom	knowledge representation language
+1439	loss function	quantity,measure
+1440	low-level action	act,action,activity
+1441	low-level process	procedure,process
+1442	machine evolution	evolution
+1443	machine learning algorithm	learning algorithm
+1444	machine learning research	research
+1445	machine translation	computer program
+1446	machine-learning approach	technique,technology,approach
+1447	macroscopic phenomenon	phenomenon
+1448	mainstay	support
+1449	majority function	system
+1450	manner	customary method
+1451	map hypothesis	hypothesis
+1452	map variable	variable
+1453	marker-passing algorithm	algorithm
+1454	markov blanket	cross-entropy based filter technique
+1455	markov chain	procedural algorithm
+1456	markov decision	decision
+1457	markov decision problem	markov chain
+1458	markov decision process	decision process
+1459	markov model	finite state machine
+1460	markov network	model,framework
+1461	markov property	assumption
+1462	matching algorithm	algorithm
+1463	matching methodology	distance method
+1464	matching process	procedure,process
+1465	material handling	science
+1466	math	science
+1467	mathematical induction	reasoning
+1468	mathematical induction schema	mathematical induction
+1469	mathematical model	idealized representation
+1470	mathematical relation	relation
+1471	mathematical statement	communication
+1472	mathematical theory of computation	theory
+1473	mathematical theory of evidence	theory
+1474	mathematics	science
+1475	matrix factorization	decomposition
+1476	matrix multiplication	benchmark
+1477	maximum entropy	model,framework
+1478	maximum expected utility	expected utility
+1479	maximum likelihood	procedure,process
+1480	mean square error	quantity,measure
+1481	means-ends analysis	methodology,method
+1482	measure of uncertainty	model,framework
+1483	mechanical device	device
+1484	medical expert system	expert system
+1485	medium	state
+1486	member-name property	property
+1487	memory	ability
+1488	memory limitation	limitation
+1489	memory requirement	requirement
+1490	memory rule	rule
+1491	memory space	space
+1492	memory-based model	model,framework
+1493	mental state	condition
+1494	mereology	logic
+1495	merge sort	sorting algorithm
+1496	merging framework	model,framework
+1497	merging process	procedure,process
+1498	mesh generation	process of dividing
+1499	meta language	language
+1500	meta-comment	communication
+1501	metalevel reasoning	reasoning
+1502	metalevel reasoning expert system	expert system
+1503	metaphor	comparison
+1504	metaphysics	philosophy
+1505	metareasoning	application
+1506	metonymy	intradomain phenomenon
+1507	metropolis algorithm	algorithm
+1508	micro-planner	systems program
+1509	min-conflicts	appealing technique
+1510	mind	ability
+1511	minimal determination	determination
+1512	minimax algorithm	algorithm
+1513	minimax decision	act,action,activity
+1514	minimax search	algorithm
+1515	minimum description length	length
+1516	minimum proof graph	proof graph
+1517	minimum spanning tree	spanning tree
+1518	mining	extractive activity
+1519	mixed inference	inference
+1520	mixture model	distribution
+1521	mobile device	device
+1522	mobile robot	robot
+1523	mobile sensor	sensor node platform
+1524	mobot	robot
+1525	modal logic	reasoning
+1526	modal operator	expression
+1527	model checking	well-established technique
+1528	model of knowledge	model,framework
+1529	model parameter	parameter
+1530	model state evolution	evolution
+1531	model theory	logic
+1532	model tree	data driven technique
+1533	model-based agent	agent
+1534	model-based approach	technique,technology,approach
+1535	model-based reasoning	semantic
+1536	model-based recognition	goal-driven approach
+1537	model-free method	methodology,method
+1538	modell of computation	computation
+1539	modell of event	event
+1540	modification operator	function
+1541	module	procedure,process
+1542	monotonic deductive system	deductive system
+1543	monotonicity of a heuristic	heuristic
+1544	monotonicity of a logic	logic
+1545	monte-carlo search	search method
+1546	morphological context	context
+1547	morphology	shape
+1548	morphology analysis	analysis
+1549	most transparent model	model,framework
+1550	motion parallax	methodology,method
+1551	motion planning	planning
+1552	motion planning complexity	complexity
+1553	motivation	act,action,activity
+1554	multi-agent platform	platform
+1555	multi-agent system	system
+1556	multi-class classifier	classifier
+1557	multi-core processor	processing system
+1558	multi-document summarization	process of dealing
+1559	multiagent reasoning	reasoning
+1560	multiagent system	technique,technology,approach
+1561	multiattribute utility	utility
+1562	multiattribute utility theory	methodology,method
+1563	multilayer network	neural network
+1564	multilayer neural network	system
+1565	multiple agent	agent
+1566	multiple inheritance	goto
+1567	multiple processor	processor
+1568	multiplicative utility function	utility function
+1569	multiply connected network	connected network
+1570	multiset variable	variable
+1571	multistratal grammar	grammar
+1572	naive agent	agent
+1573	naive method	methodology,method
+1574	named entity	text string
+1575	nash equilibrium	premise
+1576	natural deduction	inference rule
+1577	natural language	probability
+1578	natural language expert system	expert system
+1579	natural language interface	graphical user interface
+1580	natural language processing	computational technique
+1581	natural language text	text
+1582	natural number	integer
+1583	naturalness	quality
+1584	navigation robot	robot
+1585	nearest neighbor	data mining technique
+1586	negation	statement
+1587	negative feedback	process of pointing
+1588	negative literal	negation
+1589	neighborhood kernel	bubble function
+1590	neighbour classifier	classifier
+1591	nested monte-carlo search	algorithm
+1592	network of relation	network
+1593	neural information processing	information processing
+1594	neural network efficiency	neural network
+1595	neural network hardware	device
+1596	neural network learning	task
+1597	neural network link	link
+1598	neuron	neural network
+1599	new predicates learning	learning
+1600	nlp	excellence
+1601	node expansion	generation
+1602	node search	feature
+1603	node structure	structure
+1604	node utility	utility
+1605	non-deterministic domain	knowledge domain,knowledge base,domain
+1606	non-euclidean geometry	posteriori knowledge
+1607	non-formal language	language
+1608	non-human entity	entity
+1609	non-metric distance	distance
+1610	non-monotonic logic	logic
+1611	noncomputability	formulation
+1612	nondeterminism	algorithm
+1613	nondeterministic algorithm	hypothetical algorithm
+1614	nondeterministic environment	function
+1615	nondeterministic planning	decision-theoretic planning
+1616	nondeterministic polynomial time	polynomial time
+1617	nonepisodic environment	environment
+1618	nonholonomic robot	robot
+1619	nonlinear plan	plan
+1620	nonmonotonic logic	logic
+1621	nonparametric technique	technique,technology,approach
+1622	nonterminal symbol	structure
+1623	normal distribution	probability distribution
+1624	normalization	procedure,process
+1625	normalized utility	utility
+1626	normative theory	goal-oriented theory
+1627	notation logic	logic
+1628	noun compound	expression
+1629	noun phrase	uninterrupted string
+1630	np-completeness	statement
+1631	null hypothesis	statement
+1632	number theory	mathematics
+1633	numerical value	value
+1634	o-ary function symbol	function symbol
+1635	object recognition	brain
+1636	object-oriented database	database
+1637	object-oriented programming	creating
+1638	objective function	expression
+1639	observation sentence	sentence
+1640	obstacle avoidance	robotic discipline
+1641	occurrence of event	event
+1642	ockham algorithm	algorithm
+1643	oft-touted property	property
+1644	omniscient agent	agent
+1645	on-line tuning method	methodology,method
+1646	one-shot decision	decision
+1647	online algorithm	probability distribution
+1648	online cost	iterative cost
+1649	online dating website	service
+1650	ontological commitment	agreement
+1651	ontological engineering	knowledge engineering
+1652	ontology language	language
+1653	ontology matching	process of finding
+1654	op strips operator	operator
+1655	open class	training event
+1656	open planning architecture	architecture
+1657	operationality	state
+1658	operations research	being
+1659	operator reduction	reduction
+1660	operator schema	generalised representation
+1661	optical character recognition	procedure,process
+1662	optical flow	state
+1663	optimal control	control
+1664	optimal solution	system
+1665	optimality of a search algorithm	algorithm
+1666	optimality search	search
+1667	optimally efficient algorithm	algorithm
+1668	optimization	process of finding
+1669	optimization model	model,framework
+1670	order approximation	approximation
+1671	order language	language
+1672	order of magnitude	value
+1673	order of similarity calculation	order
+1674	ordering constraint	clause
+1675	ordinary differential equation	relationship
+1676	organisation of knowledge	knowledge
+1677	oriented pattern	pattern
+1678	orthogonal line	line
+1679	orthogonal relation	relation
+1680	orthogonality pattern	pattern
+1681	orthography	methodology,method
+1682	output activity	act,action,activity
+1683	pac learning	learning
+1684	pagerank	system
+1685	parallel architecture	processor
+1686	parallel corpus	resource
+1687	parallel distributed processing	model,framework
+1688	parallel processing	methodology,method
+1689	parallel relation	relation
+1690	parallel search	search
+1691	parallel text	resource
+1692	parameterized random variable	random variable
+1693	parametric technique	technique,technology,approach
+1694	parent node	node
+1695	parenthesized expression	expression
+1696	parity function	boolean function
+1697	parse forest	concise representation
+1698	parse tree	tree structure
+1699	parsing	technique,technology,approach
+1700	parsing algorithm	algorithm
+1701	parsing chart	chart
+1702	part-of-speech tagger	system
+1703	partial instantiation	transformation
+1704	partial mapping	mapping
+1705	partial regression	technique,technology,approach
+1706	partial regression equation	equation
+1707	partially observable markov decision problem	markov decision problem
+1708	partition	structure
+1709	partitioned  semantic network	semantic network
+1710	passive adp agent	agent
+1711	passive agent	agent
+1712	passive learning	process of acquiring
+1713	password generation	generation
+1714	path consistency	property
+1715	path cost	value
+1716	pathfinder	re-targetable query compiler
+1717	pathmax	concept
+1718	patrol algorithm	algorithm
+1719	pattern matching	language
+1720	pattern mining	task
+1721	pattern recognition	process of recognizing
+1722	payoff function	function
+1723	percept sequence	sequence
+1724	perceptron	model,framework
+1725	perceptron convergence theorem	theorem
+1726	perceptron learning rule	most transparent model
+1727	perceptron representational power	power
+1728	performance measure	metric
+1729	perspective projection	theory
+1730	phenomenology	technique,technology,approach
+1731	philosophy	inquiry
+1732	phonological context	context
+1733	photogrammetry	with relation
+1734	photometry	science
+1735	phrase structure	structure
+1736	physical system	system
+1737	planning agent	agent
+1738	planning algorithm	algorithm
+1739	planning problem	constrained shortest path finding
+1740	planning system	system
+1741	planning under uncertainty	ability
+1742	point-based algorithm	vector algorithm
+1743	policy iteration	algorithm
+1744	polygon	representation
+1745	polygonal model	model,framework
+1746	polynomial function	function
+1747	polynomial space	space
+1748	polynomial time	boolean query
+1749	polynomial-time algorithm	algorithm
+1750	polytree	graph
+1751	possibility theory	interpretation
+1752	posteriori knowledge	knowledge
+1753	pragmatic	source enterprise software development
+1754	pragmatic interpretation	interpretation
+1755	pre-trained classifier	classifier
+1756	precision-recall curve	curve
+1757	predicate calculus	logic
+1758	predicate logic	deduction system
+1759	predicate logic sentence	sentence
+1760	predicate symbol	function symbol
+1761	predicate type	boolean function
+1762	prediction	statement
+1763	prediction sequence	sequence
+1764	prediction-estimation process	procedure,process
+1765	premise	statement
+1766	prepositional logic	generalized logic
+1767	prepositional logic agent	agent
+1768	prepositional phrase	phrase
+1769	prepositional semantics logic	logic
+1770	prepositional syntax logic	logic
+1771	prim's algorithm	algorithm
+1772	primitive function	function
+1773	primitive operator	operator
+1774	principal component analysis	well-established method
+1775	principle of database system	principle
+1776	prior knowledge	knowledge
+1777	prior probability	posterior probability
+1778	prioritized sweeping	model,framework
+1779	priority queue	data type
+1780	proactive agent	agent
+1781	probabilistic algorithm	algorithm
+1782	probabilistic first-order logic	first-order logic
+1783	probabilistic grammar	data modelling technique
+1784	probabilistic inference	technique,technology,approach
+1785	probabilistic interpretation	probability distribution
+1786	probabilistic model	technique,technology,approach
+1787	probabilistic network	concise representation
+1788	probabilistic planning	markov decision process
+1789	probabilistic projection	reasoning
+1790	probabilistic reasoning	reasoning
+1791	probabilistic scheme	library
+1792	probabilistic sensor model	sensor model
+1793	probabilistic transition	function
+1794	probabilistic updating procedure	procedure,process
+1795	probability density	probability
+1796	probability model	model,framework
+1797	probability vector	vector
+1798	problem formulation	process of deciding
+1799	problem frame	template
+1800	problem solving	search
+1801	problem-solving agent	agent
+1802	problem-solving heuristic	technique,technology,approach
+1803	problem-solving method	methodology,method
+1804	problem-solving system	system
+1805	procedural algorithm	algorithm
+1806	procedural attachment	technique,technology,approach
+1807	procedural semantics	backward-chaining technique
+1808	process monitoring	methodology,method
+1809	process of acquiring	procedure,process
+1810	process of analyzing	procedure,process
+1811	process of applying	procedure,process
+1812	process of condensing	procedure,process
+1813	process of dealing	procedure,process
+1814	process of deciding	procedure,process
+1815	process of decomposing	procedure,process
+1816	process of discovering	procedure,process
+1817	process of dividing	procedure,process
+1818	process of eliminating	procedure,process
+1819	process of ensuring	procedure,process
+1820	process of filtering	procedure,process
+1821	process of forming	procedure,process
+1822	process of grasping	procedure,process
+1823	process of heating	procedure,process
+1824	process of measuring	procedure,process
+1825	process of pointing	procedure,process
+1826	process of producing	procedure,process
+1827	process of receiving	procedure,process
+1828	process of recognizing	procedure,process
+1829	process of reducing	procedure,process
+1830	process of removing	procedure,process
+1831	process of replacing	procedure,process
+1832	process of retaining	procedure,process
+1833	process of searching	procedure,process
+1834	process of selecting	procedure,process
+1835	process of selecting feature	procedure,process
+1836	process of testing	procedure,process
+1837	process of transforming	procedure,process
+1838	process of updating	procedure,process
+1839	process state	state
+1840	processing system	system
+1841	product rule	formula
+1842	production rule	expression
+1843	production system	computer program
+1844	profile of dependency graph	graph
+1845	program agent	agent
+1846	program synthesis	discipline,study,field of study
+1847	programmer	person
+1848	progression planning	state-space search
+1849	pronoun resolution	resolution
+1850	pronunciation learning	learning
+1851	proof	theorem
+1852	proof graph	representation
+1853	proof of theorem	factorization
+1854	proof sketch	data structure
+1855	proof tree	application
+1856	propagation algorithm	algorithm
+1857	propagation procedure	procedure,process
+1858	propositional logic	deductive system
+1859	propositional sentence	sentence
+1860	protection interval	interval
+1861	protocol	procedure,process
+1862	prototypical implementation	source
+1863	proving approach	technique,technology,approach
+1864	pruning	technique,technology,approach
+1865	pruning strategy	strategy
+1866	pseudo code	code
+1867	pseudo-code	non-formal language
+1868	psycholinguistic study	discipline,study,field of study
+1869	psychological model	theory
+1870	psychological reasoning	reasoning
+1871	psychology	mind
+1872	psychology of computer vision	psychology
+1873	public key encryption	encryption methodology
+1874	public-key encryption algorithm	algorithm
+1875	pure inductive inference	inductive inference
+1876	q-learning	incremental dynamic programming procedure
+1877	qbf solver	algorithm
+1878	qualified existential restriction	existential restriction
+1879	qualitative calculus	calculus
+1880	qualitative probabilistic network	graphical model
+1881	qualitative reasoning	intelligence
+1882	qualitative spatial reasoning	spatial reasoning
+1883	quantificational calculus	calculus
+1884	quantified sentence	sentence
+1885	quantization	procedure,process
+1886	quantum theory	theory
+1887	query answering	retrieval
+1888	query mining	mining
+1889	query variable	variable
+1890	question answering	component technology
+1891	question-answering system	system
+1892	quick sort	sorting algorithm
+1893	quotient	ratio
+1894	random field	generalization
+1895	random graph	graph
+1896	random restart	simplest method
+1897	random variable	concept
+1898	random walk	model,framework
+1899	randomization	process of making
+1900	randomized algorithm	deterministic algorithm
+1901	range	distance
+1902	rate of convergence	rate
+1903	rating matrix	matrix
+1904	ratio of efficiency	ratio
+1905	rational action	act,action,activity
+1906	rational agent	agent
+1907	rational decision	testing
+1908	ray tracing	application
+1909	re-targetable query compiler	compiler
+1910	reach	distance
+1911	reactive planner	system
+1912	reactive planning	methodology,method
+1913	reading sign	sign
+1914	real number	value
+1915	real-time ai	ai
+1916	real-time architecture	architecture
+1917	real-time dynamic programming	asynchronous dynamic programming
+1918	real-world application	application
+1919	real-world setting	setting
+1920	reasoning system	computing system
+1921	reasoning task	instance checking
+1922	reasoning with uncertainty	intelligence
+1923	recognition program	program
+1924	recommender system	methodology,method
+1925	record	data value
+1926	recurrent neural network	neural network
+1927	recursive algorithm	algorithm
+1928	recursive definition	definition
+1929	recursive dynamic programming	dynamic programming
+1930	recursive transition network	graph
+1931	recursively enumerable grammar	grammar
+1932	reductio ad absurdum	argument
+1933	reduction algorithm	algorithm
+1934	reference ontology	theory
+1935	referential transparency	oft-touted property
+1936	refinement matrix	matrix
+1937	refinement operator	operator
+1938	refinement strategy	technique,technology,approach
+1939	reflectance map	transfer function
+1940	reflex agent	model,framework
+1941	refutation graph	graph
+1942	register allocation algorithm	algorithm
+1943	regression	act,action,activity
+1944	regression model	approximation
+1945	regression planning	backward state-space search
+1946	regression recognition	recognition
+1947	regret minimization	technique,technology,approach
+1948	regular expression	pattern
+1949	regular grammar	rule
+1950	regular path query	query
+1951	regularization parameter	parameter
+1952	reinforcement learning	simulation-based method
+1953	reinforcement learning agent	learning agent
+1954	relation phrase	phrase
+1955	relation-independent pattern	pattern
+1956	relational database	database
+1957	relative clause	subordinate clause
+1958	relative error	ratio
+1959	relaxed problem	admissible heuristic
+1960	relevance-based learning	learning
+1961	remote agent	computer program
+1962	replanning agent	research
+1963	report	data,information
+1964	representation language	language
+1965	representation of causality	representation
+1966	representation of document	representation
+1967	representation of knowledge	hierarchical organization
+1968	representation theorem	theorem
+1969	resolution completeness proof	proof
+1970	resolution strategy	sequential testing algorithm
+1971	resolve	expression
+1972	resource requirement	requirement
+1973	retrieval	operation
+1974	reward function	function
+1975	rewrite rule	rule
+1976	rewriting system	system
+1977	rhetorical relation	relation
+1978	robot architecture	principle
+1979	robot box	robot
+1980	robot motion planning	discipline,study,field of study
+1981	robot system	system
+1982	robot trajectory	trajectory
+1983	robotic agent	agent
+1984	robotic device	device
+1985	robotic discipline	discipline,study,field of study
+1986	robotic network	robotic agent
+1987	robotics	intelligence
+1988	role hierarchy	technique,technology,approach
+1989	role inclusion	expression
+1990	role of domain knowledge	role
+1991	role of heuristic	role
+1992	room	space
+1993	root	node
+1994	root node	root
+1995	rotary motion	motion
+1996	routine	procedure,process
+1997	rsa encryption	public-key encryption algorithm
+1998	rule of combination	rule
+1999	rule of thumb	rule
+2000	rule-based architecture	technique,technology,approach
+2001	rule-based system	encoding
+2002	run time	time
+2003	runtime variable	field value
+2004	sample complexity	quantity,measure
+2005	sample input vector	input vector
+2006	sample pattern	pattern
+2007	sample space	space
+2008	sampling rate	parameter
+2009	sat solver	program
+2010	satellite-based navigation system	system
+2011	satisfiability checking	core algorithm
+2012	satisfiability problem	decision problem
+2013	scalar phenomenon	phenomenon
+2014	scaled orthographic projection	order approximation
+2015	scanner in chart parsing	parsing
+2016	scene	situation
+2017	schema rule	rule
+2018	scheme	concept
+2019	score rule	system
+2020	scoring function	equation
+2021	scoring rule	quantity,measure
+2022	script	orthography
+2023	search approach	technique,technology,approach
+2024	search complexity	polynomial function
+2025	search cost	cost
+2026	search engine	program
+2027	search graph	tree
+2028	search node	path
+2029	search process	procedure,process
+2030	search space	space
+2031	search spaces planning	planning
+2032	search strategy	plan
+2033	search technique	technique,technology,approach
+2034	searching	search
+2035	segment of discourse	segment
+2036	selection process	procedure,process
+2037	selection sorting	algorithm
+2038	self-constructed test tree	tree
+2039	semantic grammar	definition
+2040	semantic indexing	indexing
+2041	semantic interpretation	process of converting
+2042	semantic network	model,framework
+2043	semantic space	indefinite domain
+2044	semantic tree	tree
+2045	semantic web	place
+2046	semantics of logic program	logic program
+2047	semi-automatic metric	metric
+2048	semi-supervised alignment	eigenvalue decomposition
+2049	semi-supervised classification	classification
+2050	semi-supervised feature selection	concept
+2051	semi-supervised learning	supervised method
+2052	semidynamic environment	environment
+2053	sense disambiguation	task
+2054	sensing action	reduction
+2055	sensitivity analysis	process of determining
+2056	sensor measurement	measurement
+2057	sensor network	size
+2058	sensor node	service
+2059	sensor node platform	platform
+2060	sensory stimulus	stimulus
+2061	sentiment lexicon	phenomenon
+2062	separable utility function	utility function
+2063	sequence of token	sequence
+2064	sequence of word	sequence
+2065	sequential decision problem	decision
+2066	sequential search	algorithm
+2067	sequential testing algorithm	algorithm
+2068	sequential voting rule	rule
+2069	service composition	extension
+2070	setting	state
+2071	shallow parser	computer program
+2072	shape	state
+2073	short-term memory	ability
+2074	shortest path	path
+2075	sift feature	feature
+2076	sigmoid belief network	binary dag
+2077	sigmoid function	function
+2078	sign function	function
+2079	signal	bolt
+2080	signal processing	process of measuring
+2081	silhouette curve	curve
+2082	silhouette method	graphical cluster validation technique
+2083	similarity	quality
+2084	similarity computation	computation
+2085	similarity measure	methodology,method
+2086	similarity metric	technique,technology,approach
+2087	similarity network	construction
+2088	simplest method	methodology,method
+2089	simplification	complexity
+2090	simplification rule	rule
+2091	simulation environment	environment
+2092	simulation of intelligence	simulation
+2093	simulation of world	simulation
+2094	simulation result	result
+2095	simulation-based method	methodology,method
+2096	single entity	entity
+2097	singly connected network	connected network
+2098	singular value	value
+2099	situated agent	software agent
+2100	situated automaton	finite state automaton
+2101	situated language	language
+2102	situated planning agent	planning agent
+2103	situation calculus	order language
+2104	situation calculus planning	planning
+2105	situation space planning	planning
+2106	situation-action rule	rule
+2107	sketch recognition	process of identifying
+2108	skolemization	process of eliminating
+2109	slowest search selection	selection
+2110	smoothing technique	technique,technology,approach
+2111	social network	structure
+2112	soft global constraint	constraint
+2113	software agent	package,software,software system
+2114	software architecture	design
+2115	software engineering	construction
+2116	software program	program
+2117	software specification	methodology,method
+2118	software verification	process of ensuring
+2119	source domain	knowledge domain,knowledge base,domain
+2120	source enterprise software development	software development
+2121	source language	default
+2122	source of datum	source
+2123	source of information	source
+2124	source of knowledge	source
+2125	source ontology	ontology
+2126	space complexity	space
+2127	space-efficient dynamic programming	dynamic programming
+2128	spanning tree	tree
+2129	sparse coding	unsupervised learning algorithm
+2130	sparse covariance function	covariance function
+2131	spatial network	pattern
+2132	spatial reasoning	intelligence
+2133	spatial relation	distance
+2134	spatial relationship	vector
+2135	speaker identification	process of identifying
+2136	specialized tree-based data structure	data structure
+2137	spectral kernel	kernel
+2138	spectrophotometry	analysis
+2139	specularly reflected light	color
+2140	speech act	act,action,activity
+2141	speech act interpretation	interpretation
+2142	speech acts planning	planning
+2143	speech feature	feature
+2144	speech recognition	systems ability
+2145	speech synthesis	process of producing
+2146	speech understanding	communication
+2147	speedup learning	learning
+2148	spelling correction	feature
+2149	stability of sorting algorithm	algorithm
+2150	stable extension	extension
+2151	standard deviation	measurement
+2152	state automaton	automaton
+2153	state diagram	diagram
+2154	state space	modeling
+2155	state variable	property
+2156	static environment	environment
+2157	static symbol	symbol
+2158	static variable	variable
+2159	stationarity in pac learning	pac learning
+2160	stationary sensor model	sensor model
+2161	statistical approach	technique,technology,approach
+2162	statistical relational learning	intersection
+2163	statistical-relational learning	learning
+2164	step function	cost function
+2165	stimulus	data,information
+2166	stochastic dominance	technique,technology,approach
+2167	stochastic game	optimal control
+2168	stochastic matrix	matrix
+2169	stochastic process	phenomenon
+2170	stochastic simulation	development
+2171	stopword removal	technique,technology,approach
+2172	straightforward implementation	fdtd approach
+2173	string matching	task
+2174	strong connectivity algorithm	algorithm
+2175	structural relationship	relationship
+2176	structure of discourse	structure
+2177	structured programming construct	construct
+2178	subordinate clause	clause
+2179	subset	predicate
+2180	substring	string
+2181	subsumption architecture	methodology,method
+2182	successor function	representation
+2183	successor-state axiom	axiom
+2184	sufficient condition	condition
+2185	sum of squared difference	difference
+2186	summarizing	process of condensing
+2187	supervised learning	machine learning
+2188	supervised method	methodology,method
+2189	support	structure
+2190	support vector	vector
+2191	support vector machine	methodology,method
+2192	surface	locus
+2193	surface error	quantity,measure
+2194	sweeping statement	statement
+2195	symbolic approach	dolev-yao model
+2196	symbolic differentiation	operation
+2197	symbolic integration	integration
+2198	symbolic planning	feature
+2199	symmetric matrix	matrix
+2200	syntactic ambiguity	information property
+2201	syntactic parser	module
+2202	syntactic parsing	process of constructing
+2203	syntactic pattern	pattern
+2204	syntactic theory of knowledge	theory
+2205	syntax	principle
+2206	synthesis of algorithm	algorithm
+2207	system gain	gain
+2208	system of communication	system
+2209	systems ability	ability
+2210	systems program	program
+2211	table-based indexing	indexing
+2212	tactile sensor	structure
+2213	tag tree-adjoining grammar	tree-adjoining grammar
+2214	target compilation language	formula
+2215	target concept	concept
+2216	target domain	source domain
+2217	target language	computer language
+2218	target ontology	ontology
+2219	task network	graphic representation
+2220	taxonomic hierarchy	classification
+2221	taxonomic information	data,information
+2222	taxonomy	science
+2223	telepathic communication	ability
+2224	telepresence	turning video communication
+2225	temporal constraint	disjunction
+2226	temporal differencing	model-free method
+2227	temporal logic	rule
+2228	temporal reasoning	task
+2229	temporal relation	relation
+2230	temporal-difference equation	equation
+2231	term rewriting	decision procedure
+2232	terminal node	node
+2233	terminal state	state
+2234	terminal symbol	character string
+2235	terminal test	test
+2236	termination condition	condition
+2237	terminological logic	logic
+2238	test goal	node
+2239	test result	result
+2240	text categorization	procedure,process
+2241	text classification	technique,technology,approach
+2242	text corpus	knowledge source
+2243	text interpretation	interpretation
+2244	text string	string
+2245	textual entailment	task
+2246	theorem proving	derivation
+2247	theoretical analysis	analysis
+2248	theoretical result	result
+2249	theory of computing	computer science
+2250	theory of information value	theory
+2251	theory of inheritance	theory
+2252	theory of language	theory
+2253	theory resolution	methodology,method
+2254	thesis	marker-passing algorithm
+2255	tiling algorithm	algorithm
+2256	time complexity	size
+2257	time constraint	feature
+2258	time expression	expression
+2259	tlplan system	system
+2260	tokenization	process of using
+2261	top-down dynamic programming	dynamic programming
+2262	top-down learning	learning
+2263	topic model	generative model
+2264	total order planning	planning
+2265	tractability of inference	inference
+2266	training algorithm	algorithm
+2267	training corpus	corpus
+2268	training curve	curve
+2269	training datum	system
+2270	training event	event
+2271	training instance	record
+2272	training pattern	pattern
+2273	training sample	sample input vector
+2274	training sequence	sequence
+2275	training set	example character
+2276	trajectory	model,framework
+2277	transfer function	function
+2278	transfer motion	motion
+2279	transfer path	path
+2280	transformation	rule
+2281	transformational grammar	language analysis
+2282	transit motion	motion
+2283	transit path	path
+2284	transition function	homeomorphism
+2285	transition model	model,framework
+2286	transitivity of preference	assumption
+2287	translation of language	translation
+2288	tree decomposition	representation
+2289	tree search	algorithm
+2290	tree-adjoining grammar	grammar
+2291	tree-based indexing	indexing
+2292	trigger	act,action,activity
+2293	tropistic agent	agent
+2294	truth maintenance	methodology,method
+2295	truth maintenance system	program
+2296	truth-functionality	ability
+2297	truth-preserving inference	inference
+2298	turing machine	finite automaton
+2299	turing test	test
+2300	turning video communication	communication
+2301	two-level morphology	system
+2302	two-tailed t-test	test
+2303	two-valued logic	sort
+2304	unary constraint	constraint
+2305	unary notation	language
+2306	unbounded indeterminacy	indeterminacy
+2307	uncertain reasoning	diagnostic method
+2308	uncertain rule	rule
+2309	uncertainty model	model,framework
+2310	unconditional probability	quantity,measure
+2311	uncooperative agent	agent
+2312	undecidable problem	decision problem
+2313	understanding system	being
+2314	undirected graph	node
+2315	undirected weighted graph	graph
+2316	unguided algorithm	algorithm
+2317	uniform convergence theory	theory
+2318	uniform cost search	breadth-first search
+2319	uniformly weighted heuristic	heuristic
+2320	uninformed search algorithm	search algorithm
+2321	uninterrupted string	string
+2322	union	data structure
+2323	unit clause	clause
+2324	unit preference	heuristic
+2325	unit resolution	application
+2326	units function	function
+2327	universal quantifier	operator
+2328	unsatisfied clause	clause
+2329	unsupervised learning	process of discovering
+2330	unsupervised learning algorithm	learning algorithm
+2331	unsupervised manner	manner
+2332	upper bound	bound
+2333	use ofsearch technique	technique,technology,approach
+2334	user input	input
+2335	user interface	system
+2336	user preference	user requirement
+2337	user requirement	requirement
+2338	user response	instruction
+2339	utility function learning	learning
+2340	utility scale	function
+2341	utility space	space
+2342	utility theory	decision analysis
+2343	utility-based agent	agent
+2344	vacuum agent	agent
+2345	vacuum environment	environment
+2346	vacuum world	simulation environment
+2347	value function	function
+2348	value iteration	unguided algorithm
+2349	value-function approximation	approximation
+2350	variable planning	planning
+2351	variable-free tree structure	tree structure
+2352	vector algorithm	algorithm
+2353	vector of probability	probability
+2354	vector of variable	vector
+2355	vector quantization	quantization
+2356	vector-space model	abstraction
+2357	venn diagram	graph
+2358	version space	region
+2359	version-space learning	incremental process
+2360	vertex elimination order	order
+2361	vhdl process	procedure,process
+2362	virtual agent	agent
+2363	virtual environment	environment
+2364	virtual reality	computer program
+2365	visibility graph	methodology,method
+2366	visual feature	feature
+2367	viterbi algorithm	decoding algorithm
+2368	wacky agent	agent
+2369	web application	application
+2370	web mining	process of analyzing
+2371	web of datum	web
+2372	web service	communication
+2373	weight vector	vector
+2374	weighted heuristics mechanism	mechanism
+2375	well-established method	methodology,method
+2376	well-established technique	technique,technology,approach
+2377	well-formed formula	expression
+2378	with computational technique	computational technique
+2379	with domain	knowledge domain,knowledge base,domain
+2380	with relation	relation
+2381	word segmentation	task
+2382	word sense disambiguation	task
+2383	wordnet	database
+2384	world wide web	web
+2385	worst case analysis	technique,technology,approach
