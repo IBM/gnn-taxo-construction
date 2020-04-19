@@ -1,6 +1,8 @@
 # Graph2Taxo
 
-This is a PyTorch implementation of the ACL-2020 paper "Taxonomy Construction of Unseen Domains via Graph-based Cross-Domain Knowledge Transfer".
+This is a PyTorch implementation of the paper "Taxonomy Construction of Unseen Domains via Graph-based Cross-Domain Knowledge Transfer".
+
+Published in [ACL 2020](https://acl2020.org/). 
 
 ## Installation
 
