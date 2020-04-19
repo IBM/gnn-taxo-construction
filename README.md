@@ -25,7 +25,7 @@ When you train the model, you can run:
     python train.py
 
 
-## Model Structure
+## Design your own model
 
 You can directly modify the GRAPH2TAXO model in the "models.py" file.
 
