@@ -1,9 +1,3 @@
-import os
-import re
-import time
-import shutil
-import logging
-import pandas as pd
 import logging
 import pandas as pd
 from TaxoRL.code.utils_tree import read_tree_file, read_edge_files, load_candidate_from_pickle
@@ -16,10 +10,10 @@ import codecs
 import csv
 import os
 import re
+from morph import lemmatize
 
 logging.basicConfig(level=logging.INFO)
 
-from morph import lemmatize
 def get_freqs(self, hypo, hyper):
     hypo = str(hypo)
     hyper = str(hyper)

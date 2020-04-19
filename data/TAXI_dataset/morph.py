@@ -1,4 +1,8 @@
-from spacy.lang.en import English
+##################
+# The code is provided by TAXI.
+# https://github.com/uhh-lt/taxi/blob/a7dd2c3400512f1e363ca801f2c43fa99090c05b/jnt/morph.py
+##################
+
 from spacy.lang.fr import French
 from spacy.lang.it import Italian
 from spacy.lang.nl import Dutch
@@ -36,7 +40,6 @@ def load_stoplist(topic_words=False, lang="en"):
         print("warning: no stopwords were downloaded. check nltk corpora")
         print(format_exc())
         return set()
-
 
 # load resources 
 _stop_words = load_stoplist()

@@ -5,19 +5,16 @@
 import itertools
 import re
 from collections import defaultdict
-
 import codecs
 import numpy as np
 import copy
 import os
 import pickle
 
-
 def get_filtered_root(T, term_count, topk):
     cur_ct = [term_count[w] for w in T.V]
     cur_ct_idx = np.argsort(cur_ct)
     return set([T.V[idx] for idx in cur_ct_idx[-topk:]])
-
 
 def isHyper(taxo, hypo, hyper):
     while hypo in taxo:
@@ -26,12 +23,10 @@ def isHyper(taxo, hypo, hyper):
         hypo = taxo[hypo]
     return False
 
-
 def isEdge(taxo, hypo, hyper):
     if hypo not in taxo:
         return False
     return taxo[hypo] == hyper
-
 
 class node:
     def __init__(self, parent, name, level):
