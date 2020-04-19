@@ -20,6 +20,8 @@ class Config:
     gc1_emb_size = 100
     gc2_emb_size = 50
     F_beta = 1.0
+    patience_num = 1
+    early_F = 0.40
 
     dropout = 0.0
     backend = Backends.TORCH
@@ -33,7 +35,7 @@ class Config:
     optimizer = 'adam'
     learning_rate_decay = 1.0
     label_smoothing_epsilon = 0.1
-    epochs = 1000
+    epochs = 500
     dataset = None
     process = False
     model_name = None
@@ -66,6 +68,8 @@ class Config:
     use_transposed_convolutions = False
 
 params2type = {}
+params2type['patience_num'] = lambda x: int(x)
+params2type['early_F'] = lambda x: float(x)
 params2type['F_beta'] = lambda x: float(x)
 params2type['random_seed'] = lambda x: int(x)
 params2type['output_name'] = lambda x: x
@@ -113,6 +117,8 @@ alias2params['label_smoothing'] = 'label_smoothing_epsilon'
 alias2params['model'] = 'model_name'
 
 params2field = {}
+params2field['patience_num'] = lambda x: setattr(Config, 'patience_num', x)
+params2field['early_F'] = lambda x: setattr(Config, 'early_F', x)
 params2field['F_beta'] = lambda x: setattr(Config, 'F_beta', x)
 params2field['random_seed'] = lambda x: setattr(Config, 'random_seed', x)
 params2field['output_name'] = lambda x: setattr(Config, 'output_name', x)

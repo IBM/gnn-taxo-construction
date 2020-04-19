@@ -1,11 +1,10 @@
-
 ''''
 Data Preprocessing
 '''
 
 from __future__ import division
 from __future__ import print_function
-from TaxoRL.code.utils_tree import read_tree_file
+from data.TaxoRL_dataset.utils_tree import read_tree_file
 from collections import OrderedDict
 import pickle
 import codecs
@@ -16,8 +15,6 @@ import numpy as np
 import os.path
 from difflib import SequenceMatcher
 from utils import Endswith, Contains, Prefix_match, Suffix_match, LCS, LD
-import heapq
-from numpy import array, exp
 
 # Read the Semeval Taxonomies
 def read_files(in_path, given_root=False, filter_root=False, allow_up=True, noUnderscore=False):
@@ -65,17 +62,17 @@ def LCS_indict(x, y):
 
 ################### Get the labels/taxonomies ######################
 trees = read_tree_file(
-    "./TaxoRL/datasets/wn-bo/wn-bo-trees-4-11-50-train533-lower.ptb",
+    "./data/TaxoRL_dataset/wn-bo/wn-bo-trees-4-11-50-train533-lower.ptb",
     given_root=False, filter_root=False, allow_up=True)
 trees_val = read_tree_file(
-    "./TaxoRL/datasets/wn-bo/wn-bo-trees-4-11-50-dev114-lower.ptb",
+    "./data/TaxoRL_dataset/wn-bo/wn-bo-trees-4-11-50-dev114-lower.ptb",
     given_root=False, filter_root=False, allow_up=True)
 trees_test = read_tree_file(
-    "./TaxoRL/datasets/wn-bo/wn-bo-trees-4-11-50-test114-lower.ptb",
+    "./data/TaxoRL_dataset/wn-bo/wn-bo-trees-4-11-50-test114-lower.ptb",
     given_root=False, filter_root=False, allow_up=True)
-trees_semeval = read_files('./TaxoRL/datasets/SemEval-2016/EN/',
+trees_semeval = read_files('./data/TaxoRL_dataset/SemEval-2016/EN/',
                            given_root=True, filter_root=False, allow_up=False)
-trees_semeval_trial = read_files("./TaxoRL/datasets/SemEval-2016/trial/",
+trees_semeval_trial = read_files("./data/TaxoRL_dataset/SemEval-2016/trial/",
                                  given_root=True, filter_root=False, allow_up=False)
 
 vocab = set()
@@ -161,7 +158,7 @@ data = []
 rows = []
 columns = []
 if option == 1:
-    with open('input_pairs_fre.txt', 'r') as ft:
+    with open('./data/TAXI_dataset/input_pairs_fre.txt', 'r') as ft:
         for x in ft.readlines():
             head, tail, relation, score = x.strip().split('\t')
             if head in terms_dict and tail in terms_dict and head != tail:  # and float(score) >= 10.0:
@@ -173,7 +170,7 @@ if option == 1:
 
 elif option == 2:
     adj_dic = {}
-    with open('input_pairs_fre.txt', 'r') as ft:
+    with open('./data/TAXI_dataset/input_pairs_fre.txt', 'r') as ft:
         for x in ft.readlines():
             head, tail, relation, score = x.strip().split('\t')
             if head in terms_dict and tail in terms_dict:
@@ -183,14 +180,14 @@ elif option == 2:
                 else:
                     adj_dic[pair] = adj_dic[pair] + float(score)
 
-    with codecs.open('./TaxoRL/datasets/wn-bo/relations.txt', 'r', 'utf-8') as f_in:
+    with codecs.open('./data/TaxoRL_dataset/wn-bo/relations.txt', 'r', 'utf-8') as f_in:
         relations = [line.strip() for line in f_in]
         relation_index = {relation: i for i, relation in enumerate(relations)}
 
     # Load the datasets
-    trainname = './TaxoRL/datasets/wn-bo/train_wnbo_hyper.tsv'
-    valname = './TaxoRL/datasets/wn-bo/dev_wnbo_hyper.tsv'
-    testname = './TaxoRL/datasets/wn-bo/test_wnbo_hyper.tsv'
+    trainname = './data/TaxoRL_dataset/wn-bo/train_wnbo_hyper.tsv'
+    valname = './data/TaxoRL_dataset/wn-bo/dev_wnbo_hyper.tsv'
+    testname = './data/TaxoRL_dataset/wn-bo/test_wnbo_hyper.tsv'
     print('Loading the dataset...', trainname, '*' * 10)
     train_set = load_dataset(trainname, relations)
     print('Loading the dataset...', valname, '*' * 10)
@@ -244,7 +241,7 @@ def preprocess_RL(trees, type):
 
         try:
             hyper2hypo_w_freq = pickle.load(
-                open('./TaxoRL/datasets/SemEval-2016/candidates_taxi/{}.pkl'.format(T[2] + '.candidate_w_freq'),
+                open('./data/TaxoRL_dataset/SemEval-2016/candidates_taxi/{}.pkl'.format(T[2] + '.candidate_w_freq'),
                      'rb'))
         except:
             print("Not privide taxo", T[2])
@@ -717,7 +714,6 @@ def build_batch(trees, batch = 20):
 
 train_labels = build_batch(train_trees, 10)
 val_labels = build_batch(val_trees, 10)
-#test_labels = build_batch(test_trees, 10)
 semeval_labels_RL = preprocess_RL(trees_semeval, 'semeval')
 semeval_labels = preprocess(trees_semeval, 'semeval')
 semeval_trial_labels = preprocess(trees_semeval_trial, 'semeval')

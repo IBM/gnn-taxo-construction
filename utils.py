@@ -22,7 +22,7 @@ class F1_Loss(torch.nn.Module):
 
 # Load embeddings
 def load_embeddings(vocab_dict):
-    embedding_file = './Embeddings/embeddings_fasttaxt.pkl'
+    embedding_file = './data/Embeddings/embeddings_fasttaxt.pkl'
     word_embeddings = pd.read_pickle(embedding_file)
     selected_word_vectors = []
     for k, v in vocab_dict.items():
@@ -31,7 +31,7 @@ def load_embeddings(vocab_dict):
         else:
             # print('No embedding for the word!')
             pass
-    word_embs = torch.FloatTensor(selected_word_vectors).to(device=Config.device)
+    word_embs = torch.FloatTensor(selected_word_vectors)
     return word_embs
 
 # Logger initialization

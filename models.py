@@ -58,8 +58,10 @@ class GRAPH2TAXO(torch.nn.Module):
         self.num_entities = num_entities
         torch.manual_seed(Config.random_seed)
         self.emb_e = torch.nn.Embedding(num_entities, Config.init_emb_size, padding_idx=0)
+
+        self.gc0 = GraphConvolution(Config.init_emb_size, Config.init_emb_size, num_entities)
         self.gc1 = GraphConvolution(Config.init_emb_size, Config.gc1_emb_size, num_entities)
-        self.gc2 = GraphConvolution(Config.init_emb_size, Config.gc2_emb_size, num_entities)
+        self.gc2 = GraphConvolution(Config.gc1_emb_size, Config.gc2_emb_size, num_entities)
         self.gc3 = GraphConvolution(Config.gc1_emb_size, Config.embedding_dim, num_entities)
 
         self.conv1 = nn.Conv1d(1, Config.channels, Config.kernel_size, stride=1, padding=int(
@@ -102,20 +104,16 @@ class GRAPH2TAXO(torch.nn.Module):
         emb_initial = F.relu(emb_initial)  # option
         emb_initial = self.inp_drop(emb_initial)  # option
 
-        # Use the word embeddings
-        #emb_initial = self.bn_word(word_embs)
-        #emb_initial = F.relu(emb_initial)  # option
-        #emb_initial = self.inp_drop(emb_initial)
-        #v0 = torch.diag(torch.mm(emb_initial[e1], emb_initial[e2].t())).unsqueeze(1)
-        #v0 = torch.sigmoid(v0)
+        x = self.gc0(emb_initial, adjs)
+        x = self.bn_init(x)
+        x = F.relu(x)
+        x = self.inp_drop(x)  # option
 
-        x = self.gc1(emb_initial, adjs)
+        x = self.gc1(x, adjs)
         x = self.bn3(x)
         x = F.relu(x)
-        #v1 = torch.diag(torch.mm(x[e1], x[e2].t())).unsqueeze(1)
-        #v1 = torch.sigmoid(v1)
 
-        s = self.gc2(emb_initial, adjs)
+        s = self.gc2(x, adjs)
         s = F.softmax(s, dim=1)
         out = torch.mm(s.transpose(0, 1), x)
         out = F.relu(out)
@@ -127,17 +125,11 @@ class GRAPH2TAXO(torch.nn.Module):
         out = self.inp_drop(out)
 
         emb_dp = torch.matmul(s, out)
-        emb_dp = self.bn5(emb_dp)
         emb_dp = F.relu(emb_dp)
         emb_dp = self.inp_drop(emb_dp)
-        #v2 = torch.diag(torch.mm(emb_dp[e1], emb_dp[e2].t())).unsqueeze(1)
-        #v2 = torch.sigmoid(v2)
 
         x = torch.cat([x, emb_dp], 1)
         x = self.bn6(x)
-
-        #stack_e = torch.cat([v0, v1, v2], 1)
-        #stack_e = self.bn_edge(stack_e)
 
         e1_embedded = x[e1]
         e2_embedded = x[e2]
@@ -156,6 +148,8 @@ class GRAPH2TAXO(torch.nn.Module):
         x = x.view(x.size()[0], -1)
         x = self.fc(x)
         x = self.bn2(x)
+        #x = F.relu(x)
+        #x = self.feature_map_drop(x)
         x = self.fc3(x)
         pred = torch.sigmoid(x)
 
