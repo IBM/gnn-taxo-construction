@@ -39,6 +39,7 @@ class graph2taxoSupervisor:
         columns = columns + [i for i in range(num_entities)]
         data = data + [1 for i in range(num_entities)]
         adjs = coo_matrix((data, (rows, columns)), shape=(num_entities, num_entities)).toarray()
+        # only hyponym-hypernym candidate pairs observed more than 10 times are used to create a noisy graph.
         adjs = np.where(adjs >= 10, 1, 0)
         self.adjs = torch.FloatTensor(adjs).to(device=self.device)
         del rows
