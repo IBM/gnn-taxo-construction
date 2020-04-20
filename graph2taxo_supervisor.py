@@ -81,6 +81,7 @@ class graph2taxoSupervisor:
         if state == 'train':
             self.model.train()
             self.opt.zero_grad()
+        # Read Data
         key = labels[i][0]
         terms = torch.LongTensor(key).to(device=self.device)
         e1 = torch.LongTensor(labels[i][1]).to(device=self.device)
@@ -93,25 +94,25 @@ class graph2taxoSupervisor:
         fre = torch.FloatTensor(labels[i][8]).to(device=self.device)
         degree = torch.FloatTensor(labels[i][9]).to(device=self.device)
         substr = torch.FloatTensor(labels[i][10]).to(device=self.device)
-        pred = self.model.forward(e1, e2, rel, self.X, self.adjs, terms, e1_index, e2_index, self.word_embs, fre,
-                                  degree, substr)
 
+        pred = self.model.forward(e1, e2, rel, self.X, self.adjs, terms, e1_index, e2_index, self.word_embs, fre, degree, substr)
         label = label.view(label.size()[0], 1)
+
+        ### Loss ###
+        # Calculate Loss
         loss = self.f1_loss(pred, label)
-
+        # DAG Constraint
         pred_DAG = F.relu(pred - 0.5) * 2
-
         indices = torch.LongTensor([labels[i][6], labels[i][7]]).to(device=self.device)
         pred_data = pred_DAG.view(pred_DAG.size()[0])
-        A_pred = torch.sparse_coo_tensor(indices, pred_data, torch.Size([len(key), len(key)]),
-                                         requires_grad=True).to_dense()
+        A_pred = torch.sparse_coo_tensor(indices, pred_data, torch.Size([len(key), len(key)]), requires_grad=True).to_dense()
         h_A = self._h_A(A_pred, len(key)) / float(len(key))
         loss += self.lambda_A * h_A + 0.5 * self.c_A * h_A * h_A
-
+        # Option: Connectivity Constraint for improving the connectivity
         connectivity = self._connectivity(A_pred, len(key), i, labels)
-        loss_con = self.model.loss(connectivity, torch.FloatTensor([1 for i in range(connectivity.size()[0])]).to(
-            device=self.device))
+        loss_con = self.model.loss(connectivity, torch.FloatTensor([1 for i in range(connectivity.size()[0])]).to(device=self.device))
         loss += self.tau_A * loss_con
+
         if state == 'train':
             loss.backward()
             self.opt.step()
@@ -131,6 +132,7 @@ class graph2taxoSupervisor:
             y = key_index[tail[num]]
             pred_m[x][y] = pred[num]
 
+        ### Calculate P, R, F ###
         pred_m = np.array(pred_m).flatten()
         taxo = np.array(taxo).flatten()
         precision_curve, recall_curve, thr_curve = precision_recall_curve(taxo, pred_m)
@@ -149,7 +151,6 @@ class graph2taxoSupervisor:
 
         y_true = label.cpu().detach().numpy().flatten()
         y_pred = pred
-
         precision_curve, recall_curve, _ = precision_recall_curve(y_true, y_pred)
         f_max = 0
         for n_t in range(len(precision_curve)):
