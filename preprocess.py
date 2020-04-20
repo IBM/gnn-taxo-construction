@@ -40,7 +40,7 @@ def read_files(in_path, given_root=False, filter_root=False, allow_up=True, noUn
             trees.append([terms, hypo2hyper_edgeonly, filename])
     return trees
 
-# Load the data from "/TaxoRL/datasets/wn-bo/..."
+# Load the data from dataset_file
 def load_dataset(dataset_file, relations):
     """
     Loads a dataset file
@@ -61,6 +61,7 @@ def LCS_indict(x, y):
         return 0
 
 ################### Get the labels/taxonomies ######################
+# Read all taxonomies
 trees = read_tree_file(
     "./data/TaxoRL_dataset/wn-bo/wn-bo-trees-4-11-50-train533-lower.ptb",
     given_root=False, filter_root=False, allow_up=True)
@@ -75,6 +76,7 @@ trees_semeval = read_files('./data/TaxoRL_dataset/SemEval-2016/EN/',
 trees_semeval_trial = read_files("./data/TaxoRL_dataset/SemEval-2016/trial/",
                                  given_root=True, filter_root=False, allow_up=False)
 
+# Build the vocabulary
 vocab = set()
 for i in range(len(trees)):
     vocab = vocab.union(trees[i].terms)
@@ -151,9 +153,9 @@ index_word_map = {v: k for k, v in terms_dict.items()}
 
 
 ############### Get the adjacency matrix #################
-# If option == 1, use the TAXI extracted pairs as input. If option == 2, use the pairs in TaxoRL as input.
+# If option == 1, use the TAXI extracted pairs as input.
+# If option == 2, use the pairs in TaxoRL as input.
 option = 1
-
 data = []
 rows = []
 columns = []
@@ -161,7 +163,7 @@ if option == 1:
     with open('./data/TAXI_dataset/input_pairs_fre.txt', 'r') as ft:
         for x in ft.readlines():
             head, tail, relation, score = x.strip().split('\t')
-            if head in terms_dict and tail in terms_dict and head != tail:  # and float(score) >= 10.0:
+            if head in terms_dict and tail in terms_dict and head != tail:
                 data.append(float(score))
                 rows.append(terms_dict[head])
                 columns.append(terms_dict[tail])
@@ -208,258 +210,27 @@ elif option == 2:
                 data.append(adj_dic[pair])
             rows.append(terms_dict[head])
             columns.append(terms_dict[tail])
-    print(len(data))
 
+# Substring
 for row in vocab:
     for col in vocab:
         if col in row and row != col and len(col) > 3:
-            data.append(100) # 50, 100
+            data.append(100) # set frequency to 100 if col in row.
             rows.append(terms_dict[row])
             columns.append(terms_dict[col])
-print(len(data))
 
+# Save adjacency matrix
 with open('adj_input.pkl', 'wb') as f:
     pickle.dump([data, rows, columns, terms_dict], f)
 print("Saved adj.pkl")
 
+# Sparse Matrix
 rel_list = ['ISA']
 num_entities = len(terms_dict)
 num_relations = len(rel_list)
-
 adj = coo_matrix((data, (rows, columns)), shape=(num_entities, num_entities)).toarray()
-adj = np.where(adj >= 10, adj, 0)
-print(np.count_nonzero(np.array(adj)))
+adj = np.where(adj >= 10, adj, 0) # 10: threshold of frequency.
 print("Finished the data preparation")
-
-# preprocess the input from TaxoRL and prepare the features
-def preprocess_RL(trees, type):
-    labels = []
-
-    print(len(trees))
-    for i_episode in range(len(trees)):
-        T = trees[i_episode]
-
-        try:
-            hyper2hypo_w_freq = pickle.load(
-                open('./data/TaxoRL_dataset/SemEval-2016/candidates_taxi/{}.pkl'.format(T[2] + '.candidate_w_freq'),
-                     'rb'))
-        except:
-            print("Not privide taxo", T[2])
-            continue
-
-        tree_dict = {}
-        for i in range(len(T[1])):
-
-            if T[1][i][1] == 'root007':
-                continue
-            head = terms_dict[T[1][i][0]]
-            tail = terms_dict[T[1][i][1]]
-
-            if head in tree_dict:
-                tree_dict[head].append(tail)
-            else:
-                tree_dict[head] = [tail]
-            if tail not in tree_dict:
-                tree_dict[tail] = []
-
-        tree_dict = OrderedDict(sorted(tree_dict.items(), key=lambda t: t[0]))
-        keys = np.array(list(tree_dict.keys()))
-        num_keys = len(keys)
-        input_mat = [[0 for x in range(num_keys)] for y in range(num_keys)]
-
-        for k, v in tree_dict.items():
-            x = np.where(keys == k)[0][0]
-            for i in range(len(v)):
-                y = np.where(keys == v[i])[0][0]
-                input_mat[x][y] = 1
-        input_mat = np.array(input_mat)
-        rowsum_label = input_mat.sum(axis=1)
-        rootnode = np.where(rowsum_label == 0)[0]
-
-        mask = [[0 for x in range(num_keys)] for y in range(num_keys)]
-        for i in range(len(T[1])):
-            if T[1][i][1] == 'root007':
-                continue
-            if T[1][i][1] in T[1][i][0]:
-                x = np.where(keys == terms_dict[T[1][i][0]])[0][0]
-                y = np.where(keys == terms_dict[T[1][i][1]])[0][0]
-                mask[x][y] = 1
-        num_pairs = 0
-        num_truepairs = 0
-        num_20 = 0
-        num_20_truepairs = 0
-        for hyper in hyper2hypo_w_freq:
-            for hypo in hyper2hypo_w_freq[hyper]:
-                num_pairs += 1
-                if hyper2hypo_w_freq[hyper][hypo] >= 20:
-                    num_20 += 1
-                    x = np.where(keys == terms_dict[hypo])[0][0]
-                    y = np.where(keys == terms_dict[hyper])[0][0]
-                    mask[x][y] = hyper2hypo_w_freq[hyper][hypo]
-                    if input_mat[np.where(keys == terms_dict[hypo])[0][0]][np.where(keys == terms_dict[hyper])[0][0]] == 1:
-                        num_20_truepairs += 1
-                if input_mat[np.where(keys == terms_dict[hypo])[0][0]][np.where(keys == terms_dict[hyper])[0][0]] == 1:
-                    num_truepairs += 1
-        print(num_pairs, num_20, num_truepairs, num_20_truepairs)
-        mask = np.array(mask)
-        deg = []
-        colsum = mask.sum(axis=0)
-        rowsum = mask.sum(axis=1)
-        for j in range(0, len(mask)):
-            deg.append([colsum[j], rowsum[j]])
-        hypo_zero = np.where(rowsum == 0)[0]
-        hypo_arr = []
-        for num_hypo in hypo_zero:
-            if colsum[num_hypo] == 0:
-                hypo_arr.append(num_hypo)
-
-        mask_one = np.where(mask > 0, 1, 0)
-        deg_one = []
-        colsum_one = mask_one.sum(axis=0)
-        rowsum_one = mask_one.sum(axis=1)
-        for j in range(0, len(mask_one)):
-            deg_one.append([colsum_one[j], rowsum_one[j]])
-
-        head_array = []
-        tail_array = []
-        label_array = []
-        head_index = []
-        tail_index = []
-        fre_array = []
-        degree = []
-        substr = []
-        for r in range(num_keys):
-            for c in range(num_keys):
-                if mask[r][c] != 0 and r != c:
-                    head_array.append(keys[r])
-                    head_index.append(r)
-                    tail_array.append(keys[c])
-                    tail_index.append(c)
-                    label_array.append(input_mat[r][c])
-                    fre_array.append([mask[r][c]])
-                    degree.append(
-                        [deg[r][0], deg[r][1], deg[c][0], deg[c][1], deg_one[r][0], deg_one[r][1], deg_one[c][0],
-                         deg_one[c][1]])
-                    s1 = Endswith(index_word_map[keys[c]], index_word_map[keys[r]])
-                    s2 = Contains(index_word_map[keys[c]], index_word_map[keys[r]])
-                    s3 = Prefix_match(index_word_map[keys[c]], index_word_map[keys[r]])
-                    s4 = Suffix_match(index_word_map[keys[c]], index_word_map[keys[r]])
-                    s5 = LCS(index_word_map[keys[c]], index_word_map[keys[r]])
-                    s6 = LD(index_word_map[keys[c]], index_word_map[keys[r]])
-                    s7 = LCS_indict(index_word_map[keys[c]], index_word_map[keys[r]])
-                    substr.append([s1, s2, s3, s4, s5, s6, s7])
-
-        print("RL data:")
-        print("num of nodes:", num_keys)
-        m1 = np.array(input_mat)
-        print(np.count_nonzero(m1))
-        m2 = np.array(mask)
-        print(np.count_nonzero(m2))
-        m3 = np.multiply(m1, m2)
-        print(np.count_nonzero(m3))
-
-        rel = [0 for i in range(len(head_array))]
-        labels.append([keys, head_array, tail_array, rel, label_array, input_mat, head_index, tail_index, fre_array, degree, substr, rootnode])
-
-    return labels
-
-# preprocess the input data from Semeval and prepare the features
-def preprocess(trees, type):
-    labels = []
-
-    print(len(trees))
-    for i_episode in range(len(trees)):
-
-        T = trees[i_episode]
-        tree_dict = {}
-        for i in range(len(T[1])):
-            if T[1][i][1] == 'root007':
-                continue
-            head = terms_dict[T[1][i][0]]
-            tail = terms_dict[T[1][i][1]]
-            if head in tree_dict:
-                tree_dict[head].append(tail)
-            else:
-                tree_dict[head] = [tail]
-            if tail not in tree_dict:
-                tree_dict[tail] = []
-
-        tree_dict = OrderedDict(sorted(tree_dict.items(), key=lambda t: t[0]))
-        keys = np.array(list(tree_dict.keys()))
-        num_keys = len(keys)
-        input_mat = [[0 for x in range(num_keys)] for y in range(num_keys)]
-        for k, v in tree_dict.items():
-            x = np.where(keys == k)[0][0]
-            for i in range(len(v)):
-                y = np.where(keys == v[i])[0][0]
-                input_mat[x][y] = 1
-
-        input_mat = np.array(input_mat)
-        rowsum_label = input_mat.sum(axis=1)
-        rootnode = np.where(rowsum_label == 0)[0]
-        row_idx = np.array(keys)
-        col_idx = np.array(keys)
-        mask = adj[row_idx, :][:, col_idx]
-
-        deg = []
-        colsum = mask.sum(axis=0)
-        rowsum = mask.sum(axis=1)
-        for j in range(0, len(mask)):
-            deg.append([colsum[j], rowsum[j]])
-
-        mask_one = np.where(mask > 0, 1, 0)
-        deg_one = []
-        colsum_one = mask_one.sum(axis=0)
-        rowsum_one = mask_one.sum(axis=1)
-        for j in range(0, len(mask_one)):
-            deg_one.append([colsum_one[j], rowsum_one[j]])
-
-        head_array = []
-        tail_array = []
-        label_array = []
-        head_index = []
-        tail_index = []
-        fre_array = []
-        degree = []
-        substr = []
-        for r in range(num_keys):
-            for c in range(num_keys):
-                if mask[r][c] != 0 and r != c:
-                    head_array.append(keys[r])
-                    head_index.append(r)
-                    tail_array.append(keys[c])
-                    tail_index.append(c)
-                    label_array.append(input_mat[r][c])
-                    fre_array.append([mask[r][c]])
-                    degree.append(
-                        [deg[r][0], deg[r][1], deg[c][0], deg[c][1], deg_one[r][0], deg_one[r][1], deg_one[c][0],
-                         deg_one[c][1]])
-                    s1 = Endswith(index_word_map[keys[c]], index_word_map[keys[r]])
-                    s2 = Contains(index_word_map[keys[c]], index_word_map[keys[r]])
-                    s3 = Prefix_match(index_word_map[keys[c]], index_word_map[keys[r]])
-                    s4 = Suffix_match(index_word_map[keys[c]], index_word_map[keys[r]])
-                    s5 = LCS(index_word_map[keys[c]], index_word_map[keys[r]])
-                    s6 = LD(index_word_map[keys[c]], index_word_map[keys[r]])
-                    s7 = LCS_indict(index_word_map[keys[c]], index_word_map[keys[r]])
-                    substr.append([s1, s2, s3, s4, s5, s6, s7])
-
-        print("data:")
-        print("num of nodes:", num_keys)
-        m1 = np.array(input_mat)
-        print(np.count_nonzero(m1))
-        m2 = np.array(mask)
-        print(np.count_nonzero(m2))
-        m3 = np.multiply(m1, m2)
-        print(np.count_nonzero(m3))
-        print("OOV:")
-        mask = np.array(mask)
-        input_mat = np.array(input_mat)
-        print(np.sum(~mask.any(1)), np.sum(~input_mat.any(1)))
-
-        rel = [0 for i in range(len(head_array))]
-        labels.append([keys, head_array, tail_array, rel, label_array, input_mat, head_index, tail_index, fre_array, degree, substr, rootnode])
-
-    return labels
 
 # preprocess the input data into batches
 def build_batch(trees, batch = 20):
@@ -712,12 +483,246 @@ def build_batch(trees, batch = 20):
             print('finished')
     return train_labels
 
-train_labels = build_batch(train_trees, 10)
-val_labels = build_batch(val_trees, 10)
-semeval_labels_RL = preprocess_RL(trees_semeval, 'semeval')
-semeval_labels = preprocess(trees_semeval, 'semeval')
-semeval_trial_labels = preprocess(trees_semeval_trial, 'semeval')
+# preprocess the input from TaxoRL and prepare the features
+def preprocess_RL(trees, type):
+    labels = []
 
-with open('labels_input.pkl', 'wb') as f:
-    pickle.dump([train_labels, val_labels, semeval_labels, semeval_labels_RL, semeval_trial_labels], f)
+    print(len(trees))
+    for i_episode in range(len(trees)):
+        T = trees[i_episode]
+        try:
+            hyper2hypo_w_freq = pickle.load(
+                open('./data/TaxoRL_dataset/SemEval-2016/candidates_taxi/{}.pkl'.format(T[2] + '.candidate_w_freq'),
+                     'rb'))
+        except:
+            print("Not privide taxo", T[2])
+            continue
 
+        tree_dict = {}
+        for i in range(len(T[1])):
+
+            if T[1][i][1] == 'root007':
+                continue
+            head = terms_dict[T[1][i][0]]
+            tail = terms_dict[T[1][i][1]]
+
+            if head in tree_dict:
+                tree_dict[head].append(tail)
+            else:
+                tree_dict[head] = [tail]
+            if tail not in tree_dict:
+                tree_dict[tail] = []
+
+        tree_dict = OrderedDict(sorted(tree_dict.items(), key=lambda t: t[0]))
+        keys = np.array(list(tree_dict.keys()))
+        num_keys = len(keys)
+        input_mat = [[0 for x in range(num_keys)] for y in range(num_keys)]
+
+        for k, v in tree_dict.items():
+            x = np.where(keys == k)[0][0]
+            for i in range(len(v)):
+                y = np.where(keys == v[i])[0][0]
+                input_mat[x][y] = 1
+        input_mat = np.array(input_mat)
+        rowsum_label = input_mat.sum(axis=1)
+        rootnode = np.where(rowsum_label == 0)[0]
+
+        mask = [[0 for x in range(num_keys)] for y in range(num_keys)]
+        for i in range(len(T[1])):
+            if T[1][i][1] == 'root007':
+                continue
+            if T[1][i][1] in T[1][i][0]:
+                x = np.where(keys == terms_dict[T[1][i][0]])[0][0]
+                y = np.where(keys == terms_dict[T[1][i][1]])[0][0]
+                mask[x][y] = 1
+        num_pairs = 0
+        num_truepairs = 0
+        num_20 = 0
+        num_20_truepairs = 0
+        for hyper in hyper2hypo_w_freq:
+            for hypo in hyper2hypo_w_freq[hyper]:
+                num_pairs += 1
+                if hyper2hypo_w_freq[hyper][hypo] >= 20:
+                    num_20 += 1
+                    x = np.where(keys == terms_dict[hypo])[0][0]
+                    y = np.where(keys == terms_dict[hyper])[0][0]
+                    mask[x][y] = hyper2hypo_w_freq[hyper][hypo]
+                    if input_mat[np.where(keys == terms_dict[hypo])[0][0]][np.where(keys == terms_dict[hyper])[0][0]] == 1:
+                        num_20_truepairs += 1
+                if input_mat[np.where(keys == terms_dict[hypo])[0][0]][np.where(keys == terms_dict[hyper])[0][0]] == 1:
+                    num_truepairs += 1
+        print(num_pairs, num_20, num_truepairs, num_20_truepairs)
+        mask = np.array(mask)
+        deg = []
+        colsum = mask.sum(axis=0)
+        rowsum = mask.sum(axis=1)
+        for j in range(0, len(mask)):
+            deg.append([colsum[j], rowsum[j]])
+        hypo_zero = np.where(rowsum == 0)[0]
+        hypo_arr = []
+        for num_hypo in hypo_zero:
+            if colsum[num_hypo] == 0:
+                hypo_arr.append(num_hypo)
+
+        mask_one = np.where(mask > 0, 1, 0)
+        deg_one = []
+        colsum_one = mask_one.sum(axis=0)
+        rowsum_one = mask_one.sum(axis=1)
+        for j in range(0, len(mask_one)):
+            deg_one.append([colsum_one[j], rowsum_one[j]])
+
+        head_array = []
+        tail_array = []
+        label_array = []
+        head_index = []
+        tail_index = []
+        fre_array = []
+        degree = []
+        substr = []
+        for r in range(num_keys):
+            for c in range(num_keys):
+                if mask[r][c] != 0 and r != c:
+                    head_array.append(keys[r])
+                    head_index.append(r)
+                    tail_array.append(keys[c])
+                    tail_index.append(c)
+                    label_array.append(input_mat[r][c])
+                    fre_array.append([mask[r][c]])
+                    degree.append(
+                        [deg[r][0], deg[r][1], deg[c][0], deg[c][1], deg_one[r][0], deg_one[r][1], deg_one[c][0],
+                         deg_one[c][1]])
+                    s1 = Endswith(index_word_map[keys[c]], index_word_map[keys[r]])
+                    s2 = Contains(index_word_map[keys[c]], index_word_map[keys[r]])
+                    s3 = Prefix_match(index_word_map[keys[c]], index_word_map[keys[r]])
+                    s4 = Suffix_match(index_word_map[keys[c]], index_word_map[keys[r]])
+                    s5 = LCS(index_word_map[keys[c]], index_word_map[keys[r]])
+                    s6 = LD(index_word_map[keys[c]], index_word_map[keys[r]])
+                    s7 = LCS_indict(index_word_map[keys[c]], index_word_map[keys[r]])
+                    substr.append([s1, s2, s3, s4, s5, s6, s7])
+
+        print("RL data:")
+        print("num of nodes:", num_keys)
+        m1 = np.array(input_mat)
+        print(np.count_nonzero(m1))
+        m2 = np.array(mask)
+        print(np.count_nonzero(m2))
+        m3 = np.multiply(m1, m2)
+        print(np.count_nonzero(m3))
+
+        rel = [0 for i in range(len(head_array))]
+        labels.append([keys, head_array, tail_array, rel, label_array, input_mat, head_index, tail_index, fre_array, degree, substr, rootnode])
+
+    return labels
+
+# preprocess the input data from Semeval and prepare the features
+def preprocess(trees, type):
+    labels = []
+
+    print(len(trees))
+    for i_episode in range(len(trees)):
+
+        T = trees[i_episode]
+        tree_dict = {}
+        for i in range(len(T[1])):
+            if T[1][i][1] == 'root007':
+                continue
+            head = terms_dict[T[1][i][0]]
+            tail = terms_dict[T[1][i][1]]
+            if head in tree_dict:
+                tree_dict[head].append(tail)
+            else:
+                tree_dict[head] = [tail]
+            if tail not in tree_dict:
+                tree_dict[tail] = []
+
+        tree_dict = OrderedDict(sorted(tree_dict.items(), key=lambda t: t[0]))
+        keys = np.array(list(tree_dict.keys()))
+        num_keys = len(keys)
+        input_mat = [[0 for x in range(num_keys)] for y in range(num_keys)]
+        for k, v in tree_dict.items():
+            x = np.where(keys == k)[0][0]
+            for i in range(len(v)):
+                y = np.where(keys == v[i])[0][0]
+                input_mat[x][y] = 1
+
+        input_mat = np.array(input_mat)
+        rowsum_label = input_mat.sum(axis=1)
+        rootnode = np.where(rowsum_label == 0)[0]
+        row_idx = np.array(keys)
+        col_idx = np.array(keys)
+        mask = adj[row_idx, :][:, col_idx]
+
+        deg = []
+        colsum = mask.sum(axis=0)
+        rowsum = mask.sum(axis=1)
+        for j in range(0, len(mask)):
+            deg.append([colsum[j], rowsum[j]])
+
+        mask_one = np.where(mask > 0, 1, 0)
+        deg_one = []
+        colsum_one = mask_one.sum(axis=0)
+        rowsum_one = mask_one.sum(axis=1)
+        for j in range(0, len(mask_one)):
+            deg_one.append([colsum_one[j], rowsum_one[j]])
+
+        head_array = []
+        tail_array = []
+        label_array = []
+        head_index = []
+        tail_index = []
+        fre_array = []
+        degree = []
+        substr = []
+        for r in range(num_keys):
+            for c in range(num_keys):
+                if mask[r][c] != 0 and r != c:
+                    head_array.append(keys[r])
+                    head_index.append(r)
+                    tail_array.append(keys[c])
+                    tail_index.append(c)
+                    label_array.append(input_mat[r][c])
+                    fre_array.append([mask[r][c]])
+                    degree.append(
+                        [deg[r][0], deg[r][1], deg[c][0], deg[c][1], deg_one[r][0], deg_one[r][1], deg_one[c][0],
+                         deg_one[c][1]])
+                    s1 = Endswith(index_word_map[keys[c]], index_word_map[keys[r]])
+                    s2 = Contains(index_word_map[keys[c]], index_word_map[keys[r]])
+                    s3 = Prefix_match(index_word_map[keys[c]], index_word_map[keys[r]])
+                    s4 = Suffix_match(index_word_map[keys[c]], index_word_map[keys[r]])
+                    s5 = LCS(index_word_map[keys[c]], index_word_map[keys[r]])
+                    s6 = LD(index_word_map[keys[c]], index_word_map[keys[r]])
+                    s7 = LCS_indict(index_word_map[keys[c]], index_word_map[keys[r]])
+                    substr.append([s1, s2, s3, s4, s5, s6, s7])
+
+        print("data:")
+        print("num of nodes:", num_keys)
+        m1 = np.array(input_mat)
+        print(np.count_nonzero(m1))
+        m2 = np.array(mask)
+        print(np.count_nonzero(m2))
+        m3 = np.multiply(m1, m2)
+        print(np.count_nonzero(m3))
+        print("OOV:")
+        mask = np.array(mask)
+        input_mat = np.array(input_mat)
+        print(np.sum(~mask.any(1)), np.sum(~input_mat.any(1)))
+
+        rel = [0 for i in range(len(head_array))]
+        labels.append([keys, head_array, tail_array, rel, label_array, input_mat, head_index, tail_index, fre_array, degree, substr, rootnode])
+
+    return labels
+
+
+############## Main ##################
+def main():
+    train_labels = build_batch(train_trees, 10)
+    val_labels = build_batch(val_trees, 10)
+    semeval_labels_RL = preprocess_RL(trees_semeval, 'semeval')
+    semeval_labels = preprocess(trees_semeval, 'semeval')
+    semeval_trial_labels = preprocess(trees_semeval_trial, 'semeval')
+
+    with open('labels_input.pkl', 'wb') as f:
+        pickle.dump([train_labels, val_labels, semeval_labels, semeval_labels_RL, semeval_trial_labels], f)
+
+if __name__ == '__main__':
+    main()

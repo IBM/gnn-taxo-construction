@@ -6,7 +6,7 @@ from graph2taxo_supervisor import graph2taxoSupervisor
 def load_data():
     # Load labels
     file_name = 'labels_input.pkl'
-    (train_labels, val_labels, semeval_labels, semeval_labels_RL, __) = pd.read_pickle(file_name)
+    (train_labels, val_labels, __, semeval_labels_RL, __) = pd.read_pickle(file_name)
     return train_labels, val_labels, semeval_labels_RL
 
 ############## Main ##################
@@ -26,14 +26,13 @@ def main():
         supervisor.train(epoch, train_labels, 'train')
 
         # Validatiion
-        if (epoch + 1) % 5 == 0:
+        if (epoch + 1) % 1 == 0:
             F_score = supervisor.test(epoch, val_labels, 'val')
-
-        # Early Stop
-        if F_score > early_F:
-            patience_num -= 1
-            if patience_num < 1:
-                break
+            # Early Stop
+            if F_score > early_F:
+                patience_num -= 1
+                if patience_num < 1:
+                    break
     # Test
     supervisor.test(epoch, semeval_labels_RL, 'semeval') # Output the average results
     supervisor.test(epoch, semeval_labels_RL, 'sep_semeval') # Output the results of all domains separately
