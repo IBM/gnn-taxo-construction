@@ -1,16 +1,14 @@
 import logging
-import pandas as pd
-from TaxoRL.code.utils_tree import read_tree_file, read_edge_files, load_candidate_from_pickle
+#from TaxoRL.code.utils_tree import read_tree_file, read_edge_files, load_candidate_from_pickle
+from data.TaxoRL_dataset.utils_tree import read_tree_file, read_edge_files, load_candidate_from_pickle
 import numpy as np
 import pandas as pd
-from collections import OrderedDict
-import datetime
 import pickle
 import codecs
 import csv
 import os
 import re
-from morph import lemmatize
+from TAXI.jnt.morph import lemmatize
 
 logging.basicConfig(level=logging.INFO)
 
