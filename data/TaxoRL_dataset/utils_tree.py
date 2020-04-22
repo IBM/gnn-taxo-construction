@@ -1,5 +1,6 @@
 ###############
 # Code provided by TaxoRL: https://github.com/morningmoni/TaxoRL/tree/master/code
+# It’s a modified version from repo TaxoRL to make it work with Python 3 and it’s only used for preprocessing.
 ###############
 
 import itertools
