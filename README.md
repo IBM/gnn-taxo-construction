@@ -10,7 +10,7 @@ Install PyTorch using official website or Anaconda.
 
 ## Initializing Git submodules. 
 
-After cloning the repo, please use the command `git submodule update` to initialize the dependent submodules. This will clone [TaxoRL](https://github.com/morningmoni/TaxoRL) and [TAXI](https://github.com/uhh-lt/taxi/) projects that are used to reproduce data from existing experimets.
+After cloning the repo, if you need to process the data, please use the command `git submodule update` to initialize the dependent submodules. This will clone [TaxoRL](https://github.com/morningmoni/TaxoRL) and [TAXI](https://github.com/uhh-lt/taxi/) projects that are used to reproduce data from existing experimets. 
 
     git submodule update
 
