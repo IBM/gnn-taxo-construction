@@ -8,6 +8,12 @@ Published in [ACL 2020](https://acl2020.org/).
 
 Install PyTorch using official website or Anaconda.
 
+## Initializing Git submodules. 
+
+After cloning the repo, please use the command `git submodule update` to initialize the dependent submodules. This will clone [TaxoRL](https://github.com/morningmoni/TaxoRL) and [TAXI](https://github.com/uhh-lt/taxi/) projects that are used to reproduce data from existing experimets.
+
+    git submodule update
+
 ## Train model
 
 ### Dataset
