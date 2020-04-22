@@ -10,7 +10,7 @@ import codecs
 import csv
 import os
 import re
-from morph import lemmatize
+from TAXI.jnt.morph import lemmatize
 
 logging.basicConfig(level=logging.INFO)
 

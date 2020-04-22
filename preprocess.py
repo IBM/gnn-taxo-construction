@@ -4,7 +4,7 @@ Data Preprocessing
 
 from __future__ import division
 from __future__ import print_function
-from data.TaxoRL_dataset.utils_tree import read_tree_file
+from TaxoRL.code.utils_tree import read_tree_file
 from collections import OrderedDict
 import pickle
 import codecs
