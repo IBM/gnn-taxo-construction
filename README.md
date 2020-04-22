@@ -6,11 +6,11 @@ Published in [ACL 2020](https://acl2020.org/).
 
 ## Installation
 
-Install PyTorch using official website or Anaconda.
+Install PyTorch using the official website or Anaconda.
 
 ## Initializing Git submodules. 
 
-After cloning the repo, if you need to process the data, please use the command `git submodule update` to initialize the dependent submodules. This will clone [TaxoRL](https://github.com/morningmoni/TaxoRL) and [TAXI](https://github.com/uhh-lt/taxi/) projects that are used to reproduce data from existing experimets. 
+After cloning the repo, if you need to process the data, please use the command `git submodule update` to initialize the dependent submodules. This will clone [TaxoRL](https://github.com/morningmoni/TaxoRL) and [TAXI](https://github.com/uhh-lt/taxi/) projects that are used to reproduce data from existing experiments. 
 
     git submodule update
 
@@ -18,13 +18,13 @@ After cloning the repo, if you need to process the data, please use the command 
 
 ### Dataset
 
-TAXI datas is given in the "data/TAXI_dataset" folder. Data from TaxoRL paper is given in the "data/TaxoRL_dataset" folder.
+TAXI data is given in the "data/TAXI_dataset" folder. Data from TaxoRL paper is given in the "data/TaxoRL_dataset" folder.
 
 When you process the data, you can run:
 
     python preprocess.py
 
-### Train the model
+### Train model
 
 When you train the model, you can run:
 
