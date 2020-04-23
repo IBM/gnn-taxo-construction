@@ -1,0 +1,32 @@
+# Directories #
+/build/
+/bin/
+target/
+ 
+# OS Files #
+.DS_Store
+ 
+######################
+# Windows
+######################
+ 
+# Windows image file caches
+Thumbs.db 
+ 
+# Folder config file
+Desktop.ini
+
+######################
+# JetBrains IntelliJ
+######################
+
+.idea/
+*.iml
+*.ipr
+*.iws
+atlassian-ide-plugin.xml
+out/
+.idea_modules/
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties

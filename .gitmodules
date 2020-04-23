@@ -1,0 +1,6 @@
+[submodule "TaxoRL"]
+	path = TaxoRL
+	url = https://github.com/morningmoni/TaxoRL
+[submodule "TAXI"]
+	path = TAXI
+	url = https://github.com/uhh-lt/taxi/
