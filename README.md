@@ -1,2 +1,2 @@
 # gnn-taxo-construction
-A SIMPLE tool for taxonomy construction using Graph Neural Networks (GNN).
+a tool for taxonomy construction using Graph Neural Networks (GNN).
