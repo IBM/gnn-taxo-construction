@@ -60,7 +60,7 @@ more-itertools==7.2.0
 msgpack==0.6.1
 msgpack-numpy==0.4.3.2
 murmurhash==1.0.2
-nbconvert==6.3.0
+nbconvert==6.5.1
 nbformat==5.0.5
 nltk>=3.6.6
 notebook==6.4.12
