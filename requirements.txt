@@ -16,7 +16,7 @@ cffi==1.13.1
 chardet==3.0.4
 conda==4.7.12
 conda-package-handling==1.6.0
-cryptography==3.3.2
+cryptography==39.0.1
 cycler==0.10.0
 cymem==2.0.2
 cytoolz==0.9.0.1
