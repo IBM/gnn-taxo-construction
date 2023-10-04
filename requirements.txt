@@ -96,7 +96,7 @@ pyzmq==19.0.0
 qtconsole==4.7.3
 QtPy==1.9.0
 regex==2019.8.19
-requests==2.22.0
+requests==2.31.0
 ruamel-yaml==0.15.46
 s3transfer==0.2.1
 scikit-learn==0.21.3
