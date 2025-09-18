@@ -113,7 +113,7 @@ terminado==0.8.3
 testpath==0.4.4
 thinc==7.3.1
 toolz==0.10.0
-torch==2.2.0
+torch==2.8.0
 torchvision==0.5.0
 tornado==6.5
 tqdm==4.66.3
