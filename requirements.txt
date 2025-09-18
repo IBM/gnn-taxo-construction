@@ -130,5 +130,5 @@ wptools==0.4.17
 wrapt==1.10.11
 xlrd==1.2.0
 yarg==0.1.9
-zipp==0.6.0
+zipp==3.19.1
 
