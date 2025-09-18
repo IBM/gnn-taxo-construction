@@ -11,7 +11,7 @@ boto3==1.10.10
 botocore==1.13.10
 bs4==0.0.1
 catalogue==0.0.8
-certifi==2023.7.22
+certifi==2024.7.4
 cffi==1.13.1
 chardet==3.0.4
 conda==4.7.12
