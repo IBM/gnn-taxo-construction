@@ -34,7 +34,7 @@ h5py==2.9.0
 html2text==2020.1.16
 idna==3.7
 importlib-metadata==0.23
-inflect==3.0.1
+inflect==3.0.2
 ipykernel==5.2.1
 ipython==8.10.0
 ipython-genutils==0.2.0
