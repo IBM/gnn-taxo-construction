@@ -58,7 +58,7 @@ mkl-service==2.3.0
 more-itertools==7.2.0
 msgpack==0.6.2
 msgpack-numpy==0.4.8
-murmurhash==1.0.2
+murmurhash==1.0.15
 nbconvert==6.5.1
 nbformat==5.0.5
 nltk>=3.6.6
