@@ -77,7 +77,7 @@ pipreqs==0.4.12
 plac==0.9.6
 preshed==3.0.2
 prometheus-client==0.7.1
-prompt-toolkit==3.0.5
+prompt-toolkit==3.0.52
 ptyprocess==0.6.0
 pycosat==0.6.3
 pycparser==2.19
