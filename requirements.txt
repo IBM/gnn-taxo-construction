@@ -1,5 +1,5 @@
 annoy==1.16.3
-appnope==0.1.0
+appnope==0.1.4
 asn1crypto==1.2.0
 attrs==19.3.0
 backcall==0.1.0
