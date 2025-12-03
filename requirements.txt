@@ -79,7 +79,7 @@ preshed==3.0.2
 prometheus-client==0.7.1
 prompt-toolkit==3.0.5
 ptyprocess==0.6.0
-pycosat==0.6.3
+pycosat==0.6.6
 pycparser==2.19
 pycurl==7.43.0.5
 Pygments==2.15.0
