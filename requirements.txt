@@ -84,7 +84,7 @@ pycparser==2.19
 pycurl==7.43.0.5
 Pygments==2.20.0
 pyjarowinkler==1.8
-pyOpenSSL==19.0.0
+pyOpenSSL==26.0.0
 pyparsing==2.4.7
 pyrsistent==0.16.0
 PySocks==1.7.1
