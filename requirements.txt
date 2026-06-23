@@ -56,7 +56,7 @@ mkl-fft==1.0.15
 mkl-random==1.1.0
 mkl-service==2.3.0
 more-itertools==7.2.0
-msgpack==0.6.2
+msgpack==1.2.1
 msgpack-numpy==0.4.8
 murmurhash==1.0.15
 nbconvert==6.5.4
