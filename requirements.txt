@@ -124,7 +124,7 @@ wasabi==0.4.0
 wcwidth==0.1.9
 webencodings==0.5.1
 widgetsnbextension==3.5.1
-wincertstore==0.2
+wincertstore==0.2.1
 wptools==0.4.17
 wrapt==1.10.11
 xlrd==1.2.0
