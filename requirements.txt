@@ -114,7 +114,7 @@ thinc==7.3.1
 toolz==0.10.0
 torch==2.13.0
 torchvision==0.5.0
-tornado==6.5
+tornado==6.5.7
 tqdm==4.66.3
 traitlets==4.3.3
 ujson==5.13.0
