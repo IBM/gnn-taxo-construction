@@ -51,7 +51,7 @@ kiwisolver==1.2.0
 lxml==6.1.1
 MarkupSafe==1.1.1
 matplotlib==3.2.1
-mistune==3.3.0
+mistune==3.3.4
 mkl-fft==1.0.15
 mkl-random==1.1.0
 mkl-service==2.3.0
