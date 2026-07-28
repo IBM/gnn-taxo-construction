@@ -128,6 +128,6 @@ wincertstore==0.2
 wptools==0.4.17
 wrapt==1.10.11
 xlrd==1.2.0
-yarg==0.1.9
+yarg==0.1.10
 zipp==3.19.1
 
