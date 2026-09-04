@@ -8,7 +8,7 @@ bleach==6.4.0
 blis==0.4.1
 boto==2.49.0
 boto3==1.10.10
-botocore==1.13.10
+botocore==1.43.89
 bs4==0.0.2
 catalogue==0.0.8
 certifi==2024.7.4
