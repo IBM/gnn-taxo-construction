@@ -3,7 +3,7 @@ appnope==0.1.4
 asn1crypto==1.5.1
 attrs==19.3.0
 backcall==0.2.0
-beautifulsoup4==4.8.2
+beautifulsoup4==4.15.0
 bleach==6.4.0
 blis==0.4.1
 boto==2.49.0
